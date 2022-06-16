@@ -18,7 +18,7 @@ body { font-family: sans-serif;
   cursor: pointer;
   transform-style: preserve-3d;
   transform-origin: center right;
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .card.is-flipped {
