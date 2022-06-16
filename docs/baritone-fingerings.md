@@ -62,6 +62,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc01.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb01.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
@@ -74,7 +75,8 @@ body { font-family: sans-serif;
   <div class="card">
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc03.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb03.png" alt="sheet music" width="90%"></div>
-  </div>     
+  </div>
+</div>    
 
 <div class="scene scene--card">
   <div class="card">
@@ -88,6 +90,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc05.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb05.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
@@ -101,6 +104,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc07.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb07.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
@@ -114,6 +118,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc09.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb09.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
        
 <div class="scene scene--card">
   <div class="card">
@@ -126,7 +131,8 @@ body { font-family: sans-serif;
   <div class="card">
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc11.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb11.png" alt="sheet music" width="90%"></div>
-  </div>     
+  </div>
+</div>     
 
 <div class="scene scene--card">
   <div class="card">
@@ -140,6 +146,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc13.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb13.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
@@ -153,6 +160,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc15.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb15.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
@@ -166,6 +174,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc17.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb17.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
@@ -179,6 +188,7 @@ body { font-family: sans-serif;
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc19.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb19.png" alt="sheet music" width="90%"></div>
   </div>
+</div>
 
 <div class="scene scene--card">
   <div class="card">
