@@ -56,7 +56,7 @@ body { font-family: sans-serif;
 </head>
 <body>
 <center>
-<h2>Look at the front of each flashcard and say the note name and fingering out loud: "E; 1, 2, and 3." Then, click on the flashcard to see the answer. If you don't know the answer, you can click on the flash card first.<h2>       
+<h2>Look at the front of each flashcard and say the note name and fingering out loud: "E; 1, 2, and 3." Then, click on the flashcard to see the answer. If you don't know the answer, you can click on the flashcard first.<h2>       
 <div class="scene scene--card">
   <div class="card">
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc01.png" alt="sheet music" width="90%"></div>
