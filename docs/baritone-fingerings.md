@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 <style>
 body { font-family: sans-serif; 
@@ -58,19 +56,32 @@ body { font-family: sans-serif;
 </head>
 <body>
 <center>
+       
 <div class="scene scene--card">
   <div class="card">
     <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc01.png" alt="sheet music" width="90%"></div>
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb01.png" alt="sheet music" width="90%"></div>
   </div>
 </div>
-<center>
 <script>
 var card = document.querySelector('.card');
 card.addEventListener( 'click', function() {
   card.classList.toggle('is-flipped');
 });
 </script>
-</body>
-</html>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc02.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb02.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+<script>
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});
+</script>
+      
+<center>
 
