@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"
-      <head>
-      <script> src="https://github.com/darluzmusic/low-brass-studio/blob/f7a1e85c8d163cca989ae8bc90fa2ab44383e31e/docs/card-slide-flip.js"
-      </script>
-      <style>
-        body { font-family: sans-serif; }
+<head>
+<script> src="https://github.com/darluzmusic/low-brass-studio/blob/f7a1e85c8d163cca989ae8bc90fa2ab44383e31e/docs/card-slide-flip.js"
+</script>
+<style>
+body { font-family: sans-serif; }
 
 .scene {
   width: 200px;
