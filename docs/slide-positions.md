@@ -56,7 +56,7 @@ body { font-family: sans-serif;
 </head>
 <body>
 <center>
-<h2><b>Look at the front of each flashcard and say the note name and slide position out loud. For the first flashcard, you would say, "A-flat, 3rd position." Then, click on the flashcard to see the answer. If you don't know the answer, you can click on the flashcard first.<b><h2>       
+<h1>Look at the front of each flashcard and say the note name and slide position out loud. For the first flashcard, you would say, "A-flat, 3rd position." Then, click on the flashcard to see the answer. If you don't know the answer, you can click on the flashcard first.<h1>       
 
 <div class="scene scene--card">
   <div class="card">
