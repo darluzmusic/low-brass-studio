@@ -1,7 +1,7 @@
 <head>
 <style>
 body { font-family: sans-serif; 
-       background-color: #92a8d1;
+       background-image: linear-gradient(120deg, #155799, #159957);
 }
 
 .scene {
