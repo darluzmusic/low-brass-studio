@@ -1,6 +1,15 @@
-<div class="spoiler">
-    <img onclick="showSpoiler(this);" src="https://pbs.twimg.com/profile_images/858514627/eppaa_bigger.jpg" />
-    <div class="inner" style="display:none;">
-    This is a spoiler!
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>Click to display the time.</p>
+
+<button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
