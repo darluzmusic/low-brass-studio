@@ -1,59 +1,34 @@
-<!DOCTYPE html>
-<html lang="en"
-<head>
-<script> src="https://github.com/darluzmusic/low-brass-studio/blob/f7a1e85c8d163cca989ae8bc90fa2ab44383e31e/docs/card-slide-flip.js"
-</script>
-<style>
-body { font-family: sans-serif; }
+    <style type="text/css">
+body,input
+    {
+    font-family:"Trebuchet ms",arial;font-size:0.9em;
+    color:#333;
+    }
+.spoiler
+    {
+    border:1px solid #ddd;
+    padding:3px;
+    }
+.spoiler .inner
+    {
+    border:1px solid #eee;
+    padding:3px;margin:3px;
+    }
+    </style>
+    <script type="text/javascript">
+function showSpoiler(obj)
+    {
+    var inner = obj.parentNode.getElementsByTagName("div")[0];
+    if (inner.style.display == "none")
+        inner.style.display = "";
+    else
+        inner.style.display = "none";
+    }
+    </script>
 
-.scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid #CCC;
-  margin: 40px 0;
-  perspective: 600px;
-}
-
-.card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transform-origin: center right;
-  transition: transform 1s;
-}
-
-.card.is-flipped {
-  transform: translateX(-100%) rotateY(-180deg);
-}
-
-.card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  line-height: 260px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  backface-visibility: hidden;
-}
-
-.card__face--front {
-  background: red;
-}
-
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
-}
-<style>
-<body>
-  <div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front">front</div>
-    <div class="card__face card__face--back">back</div>
-  </div>
+<div class="spoiler">
+    <img onclick="showSpoiler(this);" src="https://pbs.twimg.com/profile_images/858514627/eppaa_bigger.jpg" />
+    <div class="inner" style="display:none;">
+    This is a spoiler!
+    </div>
 </div>
-<p>Click card to flip.</p>
