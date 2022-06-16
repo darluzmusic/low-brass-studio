@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
       <head>
-      <script>
-        var card = document.querySelector('.card');
-        card.addEventListener( 'click', function() {
-        card.classList.toggle('is-flipped');
-          });
+      <script> src="card-slide-flip.js"
       </script>
       <style>
         body { font-family: sans-serif; }
