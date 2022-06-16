@@ -60,8 +60,8 @@ body { font-family: sans-serif;
 <center>
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc01.png" alt="sheet music" width="90%" ></div>
-    <div class="card__face card__face--back"><p>E<p><p>⚫⚫⚫<p><p>1 2 3<p></div>
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc01.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb01.png" alt="sheet music" width="90%"></div>
   </div>
 </div>
 <center>
