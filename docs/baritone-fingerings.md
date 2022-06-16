@@ -71,6 +71,139 @@ body { font-family: sans-serif;
   </div>
 </div>
        
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc03.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb03.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>       
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc04.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb04.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc05.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb05.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc06.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb06.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc07.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb07.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc08.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb08.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc09.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb09.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+       
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc10.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb10.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc11.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb11.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>       
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc12.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb12.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc13.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb13.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc14.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb14.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc15.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb15.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc16.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb16.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc17.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb17.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc18.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb18.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc19.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb19.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc20.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb20.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fc21.png" alt="sheet music" width="90%"></div>
+    <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb21.png" alt="sheet music" width="90%"></div>
+  </div>
+</div>
+       
 <script>
 var cards = document.querySelectorAll('.card');
 
