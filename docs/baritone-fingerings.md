@@ -7,7 +7,7 @@
 
 <p>Click to display the time.</p>
 
-<button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+<button onclick="getElementById('demo').innerHTML=Date()"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/lbf000.png" alt="sheet music" width="95%" ></button>
 
 <p id="demo"></p>
 
