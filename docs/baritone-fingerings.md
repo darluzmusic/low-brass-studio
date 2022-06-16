@@ -203,6 +203,5 @@ var cards = document.querySelectorAll('.card');
   });
 });
 </script>
-      
 <center>
 
