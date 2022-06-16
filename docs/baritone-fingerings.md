@@ -7,8 +7,8 @@ body { font-family: sans-serif;
 }
 
 .scene {
-  width: 393px;
-  height: 262px;
+  width: 360px;
+  height: 240px;
   margin: 40px 0;
   perspective: 600px;
 }
