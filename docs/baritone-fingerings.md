@@ -63,12 +63,6 @@ body { font-family: sans-serif;
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb01.png" alt="sheet music" width="90%"></div>
   </div>
 </div>
-<script>
-var card = document.querySelector('.card');
-card.addEventListener( 'click', function() {
-  card.classList.toggle('is-flipped');
-});
-</script>
 
 <div class="scene scene--card">
   <div class="card">
@@ -76,6 +70,7 @@ card.addEventListener( 'click', function() {
     <div class="card__face card__face--back"><img src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fcb02.png" alt="sheet music" width="90%"></div>
   </div>
 </div>
+       
 <script>
 var card = document.querySelector('.card');
 card.addEventListener( 'click', function() {
