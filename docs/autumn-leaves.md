@@ -1,6 +1,6 @@
 <center>
 <<p><audio controls>
-<source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/lbf000.mp3" type="audio/mpeg">
+<source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/al.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio><p>
 <select onchange="document.getElementById('music').src = this.value">
