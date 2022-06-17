@@ -3,7 +3,7 @@
 <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/al.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio><p>
-<select onchange="document.getElementById('music').src = this.value">
+<p><select onchange="document.getElementById('music').src = this.value">
   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al00.png">Sheet Music</option>
   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al01.png">Solo Guide</option>
   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al02.png">Roots</option>
@@ -14,7 +14,6 @@ Your browser does not support the audio element.
   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al07.png">1st 5 Notes</option>
   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al08.png">7th Chords</option>
   
-</select>
-<br>
-<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al00.png" width="100%">
+</select><p>
+<p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al00.png" width="100%"><p>
 <center>
