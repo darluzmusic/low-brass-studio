@@ -15,5 +15,5 @@ Your browser does not support the audio element.
   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al08.png">7th Chords</option>
   
 </select><p>
-<p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/al00.png" width="100%"><p>
+<p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/jf00.png" width="100%"><p>
 <center>
