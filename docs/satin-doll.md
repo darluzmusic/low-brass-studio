@@ -1,5 +1,5 @@
 <center>
-  <audio controls>
+  <p><audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sd.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>&nbsp;
@@ -11,6 +11,6 @@
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd04.png">1st 2 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd05.png">1st 3 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd06.png">Triads</option>
-  </select><br>
+  </select><p>
   <img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
 <center>
