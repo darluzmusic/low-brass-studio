@@ -3,7 +3,7 @@
   <p><audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sd.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>&nbsp
+  </audio>&nbsp;
   <select onchange="document.getElementById('music').src = this.value">
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png">Sheet Music</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd01.png">Solo Guide</option>
