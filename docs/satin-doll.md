@@ -13,7 +13,6 @@
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd06.png">Triads</option>
   </select></p>
   <div style="clear: both;"></div>
-  </div>
   <style>
   .alignleft {
 	float: left;
