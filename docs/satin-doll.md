@@ -1,6 +1,6 @@
 <body>
   <div class="select_audio">
-  <p class="select"><select onchange="document.getElementById('music').src = this.value">
+  <p><select onchange="document.getElementById('music').src = this.value">
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png">Sheet Music</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd01.png">Solo Guide</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd02.png">Roots</option>
@@ -15,22 +15,12 @@
    </audio><p>
   </div>
  <div class="sheet_music">
-  <p class="music"<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
+  <p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
     </div>
 </body>
 <style>
-.select {
+.select_audio {
     display: flex;
-    justify-content: left;
-}
-
-.audio {
-    display: flex;
-    justify-content: center;
-}
-
-.music {
-    display: flex;
-    justify-content: center;
+    justify-content: space_between;
 }
 </style>
