@@ -1,16 +1,3 @@
-<head>
-<style>
-  .alignleft {
-    float: left;
-    text-align:left;
-    width: 0%
-}
-.aligncenter {
-    float: center;
-    text-align:center;
-}
-<style>
-<head>
 <body>
   <p class="alignleft"><select onchange="document.getElementById('music').src = this.value">
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png">Sheet Music</option>
@@ -27,4 +14,15 @@
    </audio><p>
   <img id="music" class="aligncenter" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
 <body>
+  <style>
+  .alignleft {
+    float: left;
+    text-align:left;
+    width: 0%
+}
+.aligncenter {
+    float: center;
+    text-align:center;
+}
+<style>
 
