@@ -22,5 +22,6 @@
 .select_audio {
     display: flex;
     justify-content: space_between;
+    align-items: center;
 }
 </style>
