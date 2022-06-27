@@ -34,4 +34,4 @@
 <img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
 </div>
 <center>
-</body>
+<body>
