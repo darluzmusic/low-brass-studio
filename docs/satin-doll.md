@@ -31,5 +31,10 @@
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sd.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio><p>
-  <p id="music"<img id="music" class="aligncenter" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%"></p>
+  </div>
+ <div class"sheet_music">
+  <p id="music"<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
+    </div>
+<body>
+    
 <body>
