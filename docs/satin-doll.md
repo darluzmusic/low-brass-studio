@@ -1,5 +1,13 @@
+<style>
+div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 6px;
+}
+</style>
 <body>
-  <div class="select_audio">
+<div>
   <p><select onchange="document.getElementById('music').src = this.value">
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png">Sheet Music</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd01.png">Solo Guide</option>
@@ -8,20 +16,11 @@
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd04.png">1st 2 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd05.png">1st 3 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd06.png">Triads</option>
-   </select></p>  
-  <p class="audio"><audio controls>
+   </select></p>
+  <a><audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sd.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-   </audio><p>
-  </div>
- <div class="sheet_music">
-  <p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
-    </div>
+   </audio></a>
+</div>
+<p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%"></p>
 </body>
-<style>
-.select_audio {
-    display: flex;
-    justify-content: space_between;
-    align-items: center;
-}
-</style>
