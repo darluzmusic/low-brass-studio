@@ -5,12 +5,12 @@
   align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
-  border: 2px solid black;
+  border: 2px black;
+  border-style: hidden
 }
 .sheet_music {
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
+  border: 2px black;
+  border-style: hidden
 }
 </style>
 <body>
@@ -29,7 +29,9 @@
     Your browser does not support the audio element.
    </audio>
 </div>
+<center>
 <div class="sheet_music">
-<p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%"></p>
+<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="80%">
 </div>
+<center>
 </body>
