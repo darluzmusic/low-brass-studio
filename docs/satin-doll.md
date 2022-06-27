@@ -12,10 +12,7 @@
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sd.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio><p>
-
-    <center>
-  <img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
-<center>
+  <img id="music" class="aligncenter" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
 <body>
 <style>
   .alignleft {
