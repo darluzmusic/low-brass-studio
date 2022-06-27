@@ -1,21 +1,3 @@
-<head>
-<style>
-.select {
-    display: flex;
-    justify-content: left;
-}
-
-.audio {
-    display: flex;
-    justify-content: center;
-}
-
-.music {
-    display: flex;
-    justify-content: center;
-}
-<style>
-</head>
 <body>
   <div class="select_audio">
   <p class="select"><select onchange="document.getElementById('music').src = this.value">
@@ -36,3 +18,19 @@
   <p class="music"<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
     </div>
 </body>
+<style>
+.select {
+    display: flex;
+    justify-content: left;
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+}
+</style>
