@@ -1,24 +1,24 @@
 <head>
 <style>
-#select {
+.select {
     display: flex;
     justify-content: left;
 }
 
-#audio {
+.audio {
     display: flex;
     justify-content: center;
 }
 
-#music {
+.music {
     display: flex;
     justify-content: center;
 }
 <style>
-<head>
+</head>
 <body>
   <div class="select_audio">
-  <p id="select"><select onchange="document.getElementById('music').src = this.value">
+  <p class="select"><select onchange="document.getElementById('music').src = this.value">
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png">Sheet Music</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd01.png">Solo Guide</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd02.png">Roots</option>
@@ -32,9 +32,7 @@
     Your browser does not support the audio element.
    </audio><p>
   </div>
- <div class"sheet_music">
-  <p id="music"<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
+ <div class="sheet_music">
+  <p class="music"<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png"         width="100%"></p>
     </div>
-<body>
-    
-<body>
+</body>
