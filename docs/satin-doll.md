@@ -18,6 +18,7 @@
   .alignleft {
     float: left;
     text-align:left;
+    width: 0%
 }
 .aligncenter {
     float: center;
