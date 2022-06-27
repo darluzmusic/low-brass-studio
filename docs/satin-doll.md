@@ -14,7 +14,7 @@
    </audio><p>
   <img id="music" class="aligncenter" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
 <body>
-  <style>
+<style>
   .alignleft {
     float: left;
     text-align:left;
@@ -25,4 +25,3 @@
     text-align:center;
 }
 <style>
-
