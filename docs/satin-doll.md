@@ -2,12 +2,10 @@
   .alignleft {
     float: left;
     text-align:left;
-    width:33.33333%;
 }
 .aligncenter {
     float: left;
     text-align:center;
-    width:33.33333%;
 }
 <style>
 <body>
