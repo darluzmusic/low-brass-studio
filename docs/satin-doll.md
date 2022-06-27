@@ -31,7 +31,7 @@
 </div>
 <center>
 <div class="sheet_music">
-<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="80%">
+<img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%">
 </div>
 <center>
 </body>
