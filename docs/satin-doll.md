@@ -2,7 +2,7 @@
 div {
   display: flex;
   justify-content: space-evenly;
-  align-items: baseline;
+  align-items: center;
   padding-top: 6px;
 }
 </style>
@@ -17,10 +17,10 @@ div {
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd05.png">1st 3 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd06.png">Triads</option>
    </select></p>
-  <a><audio controls>
+  <p><audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sd.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-   </audio></a>
+   </audio></p>
 </div>
 <p><img id="music" src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sd00.png" width="100%"></p>
 </body>
