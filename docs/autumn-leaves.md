@@ -1,5 +1,8 @@
+---
+layout: default
+title: Autumn Leaves
+---
 <head>
-<title>Autumn Leaves</title>
 <style>
 .audio_select {
   display: flex;
