@@ -1,5 +1,8 @@
+---
+layout: default
+title: Satin Doll
+---
 <head>
-<title>Satin Doll</title>
 <style>
 .audio_select {
   display: flex;
