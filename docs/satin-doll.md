@@ -1,3 +1,5 @@
+<head>
+<title>Satin Doll</title>
 <style>
 .audio_select {
   display: flex;
@@ -13,6 +15,7 @@
   border-style: hidden
 }
 </style>
+</head>
 <body>
 <div class="audio_select">
   <select onchange="document.getElementById('music').src = this.value">
