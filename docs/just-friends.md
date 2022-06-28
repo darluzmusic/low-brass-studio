@@ -1,5 +1,8 @@
+---
+layout: default
+title: Just Friends
+---
 <head>
-<title>Autumn Leaves</title>
 <style>
 .audio_select {
   display: flex;
