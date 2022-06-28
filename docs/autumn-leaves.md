@@ -1,4 +1,5 @@
-title: Autumn Leaves
+<head>
+<title>Autumn Leaves</title>
 <style>
 .audio_select {
   display: flex;
@@ -14,6 +15,7 @@ title: Autumn Leaves
   border-style: hidden
 }
 </style>
+</head>
 <body>
 <div class="audio_select">
   <select onchange="document.getElementById('music').src = this.value">
