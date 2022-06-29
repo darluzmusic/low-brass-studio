@@ -23,14 +23,14 @@ title: So What
 <div class="audio_select">
   <select onchange="document.getElementById('music').src = this.value">
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw00.png">Sheet Music</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw01.svg">Solo Guide</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw02.svg">Roots</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw03.svg">7ths to 3rds</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw04.svg">1st 2 Notes</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw05.svg">1st 3 Notes</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw06.svg">Triads</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw07.svg">1st 5 Notes</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw08.svg">7th Chords</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw01.svg">Scale | Whole</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw02.svg">3rds | Whole</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw03.svg">Broken Chords | Whole</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw04.svg">Scale | Half</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw05.svg">3rds | Half</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw06.svg">Broken Chords | Half</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw07.svg">Scale to 3rds</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/sw08.svg">Broken Chords to Scale</option>
    </select>
   <audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/sw.mp3" type="audio/mpeg">
