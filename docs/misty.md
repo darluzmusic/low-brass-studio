@@ -31,6 +31,7 @@ title: Misty
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/my06.svg">Triads</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/my07.svg">1st 5 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/my08.svg">7th Chords</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/my09.svg">7th Up Scale Down</option>
    </select>
   <audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/my.mp3" type="audio/mpeg">
