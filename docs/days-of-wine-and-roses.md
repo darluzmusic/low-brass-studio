@@ -50,12 +50,14 @@ window.onload = function () {
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/wr.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio>
-   <form>
-    <input id="pbr" type="range" value="1" 
-                    min="0.25" max="2" step="0.25" >
+     <div>
+      <form>
+       <input id="pbr" type="range" value="1" 
+                       min="0.25" max="2" step="0.25" >
  
-    <span id="currentPbr">1</span>
-  </form>
+       <span id="currentPbr">1</span>
+     </form>
+    </div>
 </div>
 <center>
 <div class="sheet_music">
