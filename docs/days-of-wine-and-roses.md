@@ -35,7 +35,7 @@ window.onload = function () {
   padding-left: 6px;
   padding-right: 6px;
   border: 2px black;
-  border-style: solid
+  border-style: hidden
 }
 </style>
 </head>
@@ -58,10 +58,11 @@ window.onload = function () {
    </audio>
      <div class="pbr_form">
       <form>
+       <center>
+        <span id="currentPbr">1</span><center>
+       <center><br>
        <input id="pbr" type="range" value="1" 
                        min="0.25" max="2" step="0.25" >
-        <br><center>
-       <span id="currentPbr">1</span><center>
      </form>
     </div>
 </div>
