@@ -36,6 +36,13 @@ title: Days of Wine & Roses
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/wr.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio>
+  <br>
+   <form>
+    <input id="pbr" type="range" value="1" 
+                    min="0.25" max="2" step="0.25" >
+ 
+    <span id="currentPbr">1</span>
+  </form><br>
 </div>
 <center>
 <div class="sheet_music">
