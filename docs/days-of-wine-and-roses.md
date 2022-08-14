@@ -32,6 +32,7 @@ window.onload = function () {
   border-style: hidden
 }
 .pbr_form {
+  text-align: center;
   padding-left: 6px;
   padding-right: 6px;
   border: 2px black;
