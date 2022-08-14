@@ -60,8 +60,8 @@ window.onload = function () {
       <form>
        <input id="pbr" type="range" value="1" 
                        min="0.25" max="2" step="0.25" >
-        <br>
-       <span id="currentPbr">1</span>
+        <br><center>
+       <span id="currentPbr">1</span><center>
      </form>
     </div>
 </div>
