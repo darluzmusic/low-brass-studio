@@ -31,6 +31,12 @@ window.onload = function () {
   border: 2px black;
   border-style: hidden
 }
+.pbr_form {
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 2px black;
+  border-style: hidden
+}
 </style>
 </head>
 <body>
@@ -50,7 +56,7 @@ window.onload = function () {
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/wr.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio>
-     <div>
+     <div class="pbr_form">
       <form>
        <input id="pbr" type="range" value="1" 
                        min="0.25" max="2" step="0.25" >
