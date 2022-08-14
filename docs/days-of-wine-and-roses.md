@@ -35,7 +35,7 @@ window.onload = function () {
   padding-left: 6px;
   padding-right: 6px;
   border: 2px black;
-  border-style: hidden
+  border-style: solid
 }
 </style>
 </head>
