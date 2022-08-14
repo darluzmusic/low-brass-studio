@@ -3,6 +3,20 @@ layout: default
 title: Days of Wine & Roses
 ---
 <head>
+<script>
+window.onload = function () {
+ 
+  var v = document.getElementById("myAudio");
+  var p = document.getElementById("pbr");
+  var c = document.getElementById("currentPbr");
+ 
+  p.addEventListener('input',function(){
+    c.innerHTML = p.value;
+    v.playbackRate = p.value;
+  },false);
+ 
+};
+</script>
 <style>
 .audio_select {
   display: flex;
@@ -32,17 +46,16 @@ title: Days of Wine & Roses
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/wr07.svg">1st 5 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/wr08.svg">7th Chords</option>
    </select>
-  <audio controls>
+  <audio id="myAudio" controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/wr.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio>
-  <br>
    <form>
     <input id="pbr" type="range" value="1" 
                     min="0.25" max="2" step="0.25" >
  
     <span id="currentPbr">1</span>
-  </form><br>
+  </form>
 </div>
 <center>
 <div class="sheet_music">
