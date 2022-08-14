@@ -58,7 +58,7 @@ window.onload = function () {
    </audio>
      <div class="pbr_form">
       <form>
-       <span id="currentPbr">1</span>
+       <center><span id="currentPbr">1</span><center><br>
        <input id="pbr" type="range" value="1" 
                     min="0.25" max="2" step="0.25" >
  
