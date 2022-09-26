@@ -6,8 +6,11 @@
 </script>
 </head>
 <body>
-<p>Exercises:
-<select id="mySelect" onchange="document.getElementById('demo').src = `${path}${value}`">
+<center>
+<div class="exerciseSelect">
+    <p>
+    Exercises:
+    <select id="mySelect" onchange="document.getElementById("demo").src = `${path}${value}`">
     <option>1-13</option>
     <option>14-26</option>
     <option>27-39</option>
@@ -26,8 +29,12 @@
     <option>175-181</option>
     <option>182-184</option>
     <option>185-187</option>
-</select></p>
-    <div id=inline>
-        <iframe id="demo" width=100% height=3840 src="https://darluzmusic.github.io/low-brass-studio/e1tb/1-13"></iframe>
-    </div>
+    </select>
+    </p>
+</div>
+<div class="inline">
+    <iframe id="demo" width=100% height=3840 src="https://darluzmusic.github.io/low-brass-studio/e1tb/1-13">
+    </iframe>
+</div>
+</center>
 </body>
