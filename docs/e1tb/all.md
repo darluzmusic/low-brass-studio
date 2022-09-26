@@ -6,9 +6,8 @@
 </script>
 </head>
 <body>
-<center>
     Exercises:
-    <select id="mySelect" onchange="document.getElementById("demo").src = `${path}${value}`">
+    <select id="mySelect" onchange="document.getElementById('demo').src = `${path}${value}`">
     <option>1-13</option>
     <option>14-26</option>
     <option>27-39</option>
@@ -30,5 +29,4 @@
     </select>
     <iframe id="demo" width="100%" height="3840" src="https://darluzmusic.github.io/low-brass-studio/e1tb/1-13">
     </iframe>
-</center>
 </body>
