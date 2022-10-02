@@ -23,7 +23,7 @@
 <p id="music"></p>
 
 <script>
-const aud_dir = "https://www.myeelibrary.com/PlayAlongTracks/";
+const aud_dir = "http://www.myeelibrary.com/PlayAlongTracks/";
 const aud_name = "E1TB"
 const aud_path = `${aud_dir}${aud_name}`;
 const img_dir = "https://www.essentialelementsinteractive.com/EESONGS/Graphics/"
