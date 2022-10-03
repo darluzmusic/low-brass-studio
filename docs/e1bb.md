@@ -1,3 +1,5 @@
+<h1>ESSENTIAL ELEMENTS FOR BAND:</h1>
+  <h2>BARITONE BOOK 1</h2>
 <body onload="selectFunction()">
 Exercises:
   <select id="mySelect" onchange="selectFunction()">
