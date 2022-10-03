@@ -18,19 +18,19 @@
   <option>118-127</option>
   <option>128-138</option>
   <option>139-148</option>
-   <optgroup label="Individual Study" 
+   <optgroup label="Individual Study"> 
   <option>149-157</option>
    </optgroup>
-   <optgroup label="Reading Skill Builder" 
+   <optgroup label="Reading Skill Builder"> 
   <option>158-166</option>
    </optgroup>
-      <optgroup label="Chorales" 
+      <optgroup label="Chorales"> 
   <option>167-173</option>
    </optgroup>
-      <optgroup label="The Basics of Jazz Style" 
+      <optgroup label="The Basics of Jazz Style"> 
   <option>174-181</option>
    </optgroup>
-      <optgroup label="Scales And Arpeggios" 
+      <optgroup label="Scales And Arpeggios"> 
   <option>182-195</option>
    </optgroup>
 </select>
