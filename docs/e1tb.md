@@ -1,5 +1,6 @@
 <body onload="selectFunction()">
-<select id="mySelect" onchange="selectFunction()">
+Exercises:
+  <select id="mySelect" onchange="selectFunction()">
   <option>1-13</option>
   <option>14-26</option>
   <option>27-39</option>
