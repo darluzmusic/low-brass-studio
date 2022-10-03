@@ -8,8 +8,8 @@ Exercises:
   <option>52-58</option>
   <option>59-72</option>
   <option>73-85</option>
-  <option>86-98</option>
-  <option>99-109</option>
+  <option>86-99</option>
+  <option>100-109</option>
   <option>110-118</option>
   <option>119-131</option>
   <option>132-146</option>
