@@ -1,5 +1,7 @@
 <body onload="selectFunction()">
-Exercises:
+<h1>ESSENTIAL ELEMENTS FOR BAND:</h1>
+  <h2>TROMBONE BOOK 1</h2>
+  Exercises:
   <select id="mySelect" onchange="selectFunction()">
   <option>1-13</option>
   <option>14-26</option>
