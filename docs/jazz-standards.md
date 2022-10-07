@@ -22,19 +22,19 @@ title: Jazz Standards
 <body>
 <div class="audio_select">
   <select onchange="document.getElementById('music').src = this.value">
-   <option value="https://github.com/darluzmusic/low-brass-studio/autumn-leaves">Autumn Leaves</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/days-of-wine-and-roses">Days of Wine and Roses</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/footprints">Footprints</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/just-friends">Just Friends</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/misty">Misty</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/satin-doll">Satin Doll</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/so-what">So What</option>
-   <option value="https://github.com/darluzmusic/low-brass-studio/sesame-street">Sesame Street</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/autumn-leaves">Autumn Leaves</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/days-of-wine-and-roses">Days of Wine and Roses</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/footprints">Footprints</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/just-friends">Just Friends</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/misty">Misty</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/satin-doll">Satin Doll</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/so-what">So What</option>
+   <option value="https://darluzmusic.github.io/low-brass-studio/sesame-street">Sesame Street</option>
    </select>
 </div>
 <center>
 <div class="sheet_music">
-<iframe frameBorder="0" id="music" height="1920" src="https://github.com/darluzmusic/low-brass-studio/autumn-leaves" width="100%"></iframe>
+<iframe frameBorder="0" id="music" height="1920" src="https://darluzmusic.github.io/low-brass-studio/autumn-leaves" width="100%"></iframe>
 </div>
 <center>
 <body>
