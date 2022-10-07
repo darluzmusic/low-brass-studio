@@ -46,7 +46,7 @@ window.onload = function () {
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/fp00.jpg">Sheet Music</option>
    </select>
   <audio id="myAudio" controls>
-    <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/fp.mp3" type="audio/mpeg">
+    <source src="https://www.youtube.com/watch?v=1ugjsyNpPRI" type="audio/mpeg">
     Your browser does not support the audio element.
    </audio>
    <div class="pbr_form">
