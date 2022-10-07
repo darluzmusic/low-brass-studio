@@ -31,6 +31,7 @@ title: Just Friends
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/jf06.svg">Triads</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/jf07.svg">1st 5 Notes</option>
    <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/jf08.svg">7th Chords</option>
+   <option value="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/jf09.svg">7-6-7-1-2-1-7-6</option>
    </select>
   <audio controls>
     <source src="https://github.com/darluzmusic/low-brass-studio/raw/master/docs/assets/audio/jf.mp3" type="audio/mpeg">
