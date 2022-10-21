@@ -1,4 +1,14 @@
+<style>
+      #header {
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    opacity: 0.2;
+    background: grey;
+</style>
 <body onload="selectFunction()">
+      <div id='tune_select'>
       <h4>THE REAL BOOK - VOLUME I - SIXTH EDITION | Bass Clef Edition</h4>
       Tune:
       <select id="mySelect" onchange="selectFunction()">
@@ -403,6 +413,7 @@
         <option value="461-461">461 Young At Heart</option>
         <option value="462-462">462 You're Nobody 'til Somebody Loves You</option>
     </select>
+      </div>
     
     <p id="music"></p>
     
