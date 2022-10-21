@@ -6,6 +6,7 @@
     width: 100%;
     opacity: 0.2;
     background: grey;
+      }
 </style>
 <body onload="selectFunction()">
       <div id='tune_select'>
