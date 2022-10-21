@@ -167,19 +167,19 @@ a {
   }
 
   @include large {
-    max-width: 64rem;
-    padding: 0rem 6rem;
+    max-width: 72rem;
+    padding: 0rem 0rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 0rem 4rem;
+    padding: 0rem 0rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
     font-size: 1rem;
   }
   
