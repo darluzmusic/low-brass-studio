@@ -1,7 +1,6 @@
 <style>
     #tune_select {
-  display: flex;
-  justify-content: center;  
+  text-align: center;
   position: fixed;
   top: 0px;
   height: 100px;
