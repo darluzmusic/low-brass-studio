@@ -9,7 +9,6 @@
 </style>
 <body onload="selectFunction()">
       <div id='tune_select'>
-          <h5>The Real Book – Volume I – Sixth Edition - Bass Clef Edition</h5>
       <select id="mySelect" onchange="selectFunction()">
         <option value="10-10-241">10 African Flower Petite Fleur Africaine</option>
 <option value="11-11-241">11 Afro Blue</option>
