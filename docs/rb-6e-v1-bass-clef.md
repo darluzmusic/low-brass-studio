@@ -3,12 +3,6 @@
   margin: auto;
   text-align: center;
     }
-    #audio {
-  margin-top: 10px;
-    }
-    #music {
-  border: 5px;
-    }
 </style>
 <body onload="selectFunction()">
       <div id='tune_select'>
@@ -415,9 +409,8 @@
 <option value="462-462-239">462 Youre Nobody til Somebody Loves You🎵</option>
     </select>
     <div id="audio"></div>
-      </div>
-    
-    <p id="music"></p>
+    <div id="music"></div>
+    </div>
     
     <script>
     const dir = "https://rb-6e-v1.s3.us-west-1.amazonaws.com/";
