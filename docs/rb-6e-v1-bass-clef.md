@@ -2,9 +2,6 @@
     #tune_select {
   margin: auto;
   text-align: center;
-  height: 150px;
-  width: 90%;
-  background: rgb(128, 128, 128, .2);
     }
     #audio {
   margin-top: 10px;
