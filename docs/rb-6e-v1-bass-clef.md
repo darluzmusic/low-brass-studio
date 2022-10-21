@@ -2,8 +2,6 @@
     #tune_select {
   margin: auto;
   text-align: center;
-  position: fixed;
-  top: 0px;
   height: 150px;
   width: 90%;
   background: rgb(128, 128, 128, .2);
@@ -14,10 +12,8 @@
 </style>
 <body onload="selectFunction()">
       <div id='tune_select'>
-      <h4>THE REAL BOOK - VOLUME I - SIXTH EDITION | Bass Clef Edition</h4>
       Tune:
       <select id="mySelect" onchange="selectFunction()">
-        <option value="10-10-241">10 African Flower Petite Fleur Africaine</option>
         <option value="10-10-241">10 African Flower Petite Fleur Africaine</option>
         <option value="11-11-241">11 Afro Blue</option>
         <option value="12-12-241">12 Afternoon In Paris</option>
