@@ -6,6 +6,9 @@
     #audio {
   margin-top: 10px;
     }
+    #music {
+  border: 5px;
+    }
 </style>
 <body onload="selectFunction()">
       <div id='tune_select'>
