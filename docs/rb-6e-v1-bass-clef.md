@@ -1,10 +1,11 @@
 <style>
     #tune_select {
+  margin: auto;
   text-align: center;
   position: fixed;
   top: 0px;
   height: 100px;
-  width: 100%;
+  width: 90%;
   background: rgb(128, 128, 128, .2);
     }
 </style>
