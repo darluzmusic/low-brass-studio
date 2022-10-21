@@ -1,8 +1,6 @@
 <body onload="selectFunction()">
-    <h1>The Real Book</h1>
-      <h2>6th Edition</h2>
-      <h3>Vol. 1</h3>
-      <h4>Bass Clef</h4>
+      <h4>THE REAL BOOK - VOLUME I - SIXTH EDITION</h4>
+      <h5>Bass Clef Edition<h5>
       Tune:
       <select id="mySelect" onchange="selectFunction()">
         <option value="10-10">10 African Flower (Petite Fleur Africaine)</option>
