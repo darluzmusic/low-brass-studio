@@ -1,12 +1,11 @@
 <style>
-      #tune_select {
-    position: fixed;
-    top: 0px;
-    height: 50px;
-    width: 100%;
-    opacity: 0.2;
-    background: grey;
-      }
+    #tune_select {
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: 100%;
+  background: rgb(128, 128, 128, .2);
+    }
 </style>
 <body onload="selectFunction()">
       <div id='tune_select'>
