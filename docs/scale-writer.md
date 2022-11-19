@@ -5,7 +5,7 @@
 <select id="rootSelect">
     <option value="4,7,11,13,16,19,23,25,28">D</option>
     <option value="13,16,19,22,25,28,32,34,37">G</option>
-    <option value="1,4,7,10,13,16,19,22,25">C</option>
+    <option value="1,4,7,10,13,16,19,22,25" selected>C</option>
     <option value="10,13,16,18,22,25,28,31,34">F</option>
     <option value="18,22,25,27,31,34,37,39,43">B♭</option>
   </select>
