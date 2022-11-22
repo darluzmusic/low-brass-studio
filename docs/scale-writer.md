@@ -26,8 +26,9 @@
     <option value="0,1,1,0,1,1,1,0,1">-7♭5 | Locrian</option>
     <option value="0,0,1,0,1,1,2,1,2">°7 | Diminished</option>
     <option value="0,0,0,-1,0,0,0,0,0">maj+4 | Lydian</option>
-    <option value="0,0,0,-1,0,0,1,0,0">7+11 | Lydian Dominant</option>
+    <option value="0,0,0,-1,0,0,1,0,0">7♯11 | Lydian Dominant</option>
     <option value="0,1,0,0,0,1,1,0,-1">7♭9 | 3rd Mode of Bebop (Major)</option>
+    <option value="0,1,0,-1,-1,1,1,0,-1">7♯9 | Diminished Whole Tone</option>
   </select>
 <button onclick="scaleFunction()">Add Scale</button>
 <button onclick="myBarline()">Add Barline</button>
