@@ -1,6 +1,10 @@
 <html>
+<style>
+  #scale {
+    padding-left: 5px;
+  }
+</style>
 <body>
-
 <h2>Scale Writer</h2>
 <select id="rootSelect">
   <option value="2,7,12,17,22,27,32,37,42">C♯</option>
@@ -32,15 +36,36 @@
   </select>
 <button onclick="scaleFunction()">Add Scale</button>
 <button onclick="myBarline()">Add Barline</button>
-<button onclick="clearFunction()">Clear</button><br>
-<div id="scale"></div>
+<button onclick="clearFunction()">Clear</button>
+<button onclick="editFunction()">Edit</button>
+<button onclick="copyAll()">Copy All</button><br>
+<div id="scale" contenteditable="true"></div>
 <script>
+function copyAll() {
+  const richTextDiv = document.getElementById("scale");
+
+const clipboardItem = new ClipboardItem({
+	"text/plain": new Blob(
+		[richTextDiv.innerText],
+		{ type: "text/plain" }
+	),
+	"text/html": new Blob(
+		[richTextDiv.outerHTML],
+		{ type: "text/html" }
+	),
+});
+
+navigator.clipboard.write([clipboardItem]);
+}
+function editFunction() {
+  document.getElementById("scale").focus();
+}
 function clearFunction() {
 document.getElementById("scale").innerHTML = "";
 }
 function myBarline() {
-const node = document.createElement("hr");
-document.getElementById("scale").append(node);
+  const div = document.getElementById("scale");
+div.insertAdjacentHTML('beforeend',"———————————————" + "<br>");
 }
 function scaleFunction() {
 let a = rootSelect.options[rootSelect.selectedIndex].text;
