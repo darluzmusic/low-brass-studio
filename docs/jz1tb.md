@@ -1,6 +1,5 @@
 <body>
-    <h1>ESSENTIAL ELEMENTS FOR JAZZ ENSEMBLE:</h1>
-      <h2>TROMBONE BOOK 1</h2>
+  <div style="padding:1rem;position:fixed;background-color:rgba(116, 116, 116, 0.315);" >
       Exercises: 
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">1-5</option>
@@ -166,8 +165,8 @@
       <audio id="play" controls>
         <source src="https://jz1-assets.s3.us-west-1.amazonaws.com/JzAll1.mp3">
       </audio>
-      <br>
-      <img id="exercise" width="100%" src="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">
+    </div>
+      <img style="padding-top:6rem" id="exercise" width="100%" src="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">
       
     <script>
     //PLAYALONG//
