@@ -1,7 +1,7 @@
 <body>
   <div style="padding:1rem;border:0.1rem;border-color:black;position:fixed;background-color:rgba(255, 255, 255, 0.9);" >
     Exercises: 
-      <select id="exerciseSelect" onchange="selectFunction()">
+      <select id="exerciseSelect" onchange="selectFunction(); playFunction();">
         <option value="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">1-5</option>
         <option value="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_02.png">6-8</option>
         <option value="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_03.png">9-13</option>
