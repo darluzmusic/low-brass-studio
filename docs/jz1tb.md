@@ -1,5 +1,5 @@
 <body>
-  <div style="padding:1rem;border:0.1rem;border-color:black;position:fixed;background-color:rgba(255, 255, 255, 0.966);" >
+  <div style="padding:1rem;border:0.1rem;border-color:black;position:fixed;background-color:rgba(255, 255, 255, 0.9);" >
     Exercises: 
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">1-5</option>
@@ -166,7 +166,7 @@
         <source src="https://jz1-assets.s3.us-west-1.amazonaws.com/JzAll1.mp3">
       </audio>
     </div>
-      <img style="padding-top:6rem" id="exercise" width="100%" src="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">
+      <img style="padding-top:8rem" id="exercise" width="100%" src="https://jz1-assets.s3.us-west-1.amazonaws.com/jz1_Page_01.png">
       
     <script>
     //PLAYALONG//
