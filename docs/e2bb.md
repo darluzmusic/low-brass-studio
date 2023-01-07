@@ -42,10 +42,24 @@ Exercises:
   <option>199-200</option>
     </optgroup>
 </select>
+      <button onclick="exercise_previous(); selectFunction(); ">⬅️</button>
+      <button onclick="exercise_next(); selectFunction();">➡️</button>
+    <br>
 
 <p id="music"></p>
 
 <script>
+  //BUTTONS//
+    function exercise_previous() {
+        var x = 
+    document.getElementById("exerciseSelect").selectedIndex;
+    document.getElementById("exerciseSelect").selectedIndex = x - 1;
+    }
+    function exercise_next() {
+        var x = 
+    document.getElementById("exerciseSelect").selectedIndex;
+    document.getElementById("exerciseSelect").selectedIndex = x + 1;
+    }
 const aud_dir = "https://e2-assets.s3.us-west-1.amazonaws.com/";
 const aud_name = "E2BB"
 const aud_path = `${aud_dir}${aud_name}`;
@@ -67,7 +81,7 @@ function selectFunction() {
   } else {
     zero = "";
   }
-    text +="<img src=" + img_path + zero + i + ".jpg><br><audio controls><source src=" +  aud_path + i + ".mp3></audio><br><hr>";
+    text +="<img width='100%' src=" + img_path + zero + i + ".jpg><br><audio controls><source src=" +  aud_path + i + ".mp3></audio><br><hr style='height:10px;border-radius:25px;background-color:#75ab9a;border-style:none;'>";
   }
   document.getElementById("music").innerHTML = text;
 }
