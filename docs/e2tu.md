@@ -2,7 +2,7 @@
   <h2>TUBA BOOK 2</h2>
 <body onload="selectFunction()">
 Exercises:
-  <select id="mySelect" onchange="selectFunction()">
+  <select id="exerciseSelect" onchange="selectFunction()">
   <option>1-10</option>
   <option>11-19</option>
   <option>20-31</option>
@@ -68,7 +68,7 @@ const img_name = "B2Tuba2";
 const img_path = `${img_dir}${img_name}`;
 function selectFunction() {
   let text = "";
-  var x = document.getElementById("mySelect").value;
+  var x = document.getElementById("exerciseSelect").value;
   const myArray = x.split("-");
   var i = myArray[0];
   var num = myArray[1];

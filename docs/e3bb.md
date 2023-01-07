@@ -2,7 +2,7 @@
 <h1>ESSENTIAL ELEMENTS FOR BAND:</h1>
   <h2>BARITONE BOOK 3</h2>
   Exercises:
-  <select id="mySelect" onchange="selectFunction()">
+  <select id="exerciseSelect" onchange="selectFunction()">
   <option>1-11</option>
   <option>12-22</option>
   <option>23-34</option>
@@ -60,7 +60,7 @@ const img_name = "B3BarBC3";
 const img_path = `${img_dir}${img_name}`;
 function selectFunction() {
   let text = "";
-  var x = document.getElementById("mySelect").value;
+  var x = document.getElementById("exerciseSelect").value;
   const myArray = x.split("-");
   var i = myArray[0];
   var num = myArray[1];

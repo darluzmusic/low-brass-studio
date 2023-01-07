@@ -2,7 +2,7 @@
   <h2>BARITONE BOOK 1</h2>
 <body onload="selectFunction()">
 Exercises:
-  <select id="mySelect" onchange="selectFunction()">
+  <select id="exerciseSelect" onchange="selectFunction()">
   <option>1-13</option>
   <option>14-26</option>
   <option>27-39</option>
@@ -22,10 +22,9 @@ Exercises:
   <option>182-184</option>
   <option>185-187</option>
 </select>
-      <button onclick="exercise_previous(); selectFunction(); ">⬅️</button>
+      <button onclick="exercise_previous(); selectFunction();">⬅️</button>
       <button onclick="exercise_next(); selectFunction();">➡️</button>
     <br>
-
 <p id="music"></p>
 
 <script>
