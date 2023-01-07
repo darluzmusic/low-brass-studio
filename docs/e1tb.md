@@ -60,7 +60,7 @@ function selectFunction() {
   } else {
     zero = "";
   }
-    text +="<img src=" + img_path + zero + i + ".jpg><br><audio controls><source src=" +  aud_path + i + ".mp3></audio><br><hr>";
+    text +="<img width="100%" src=" + img_path + zero + i + ".jpg><br><audio controls><source src=" +  aud_path + i + ".mp3></audio><br><hr style="height:10px;border-radius:25px; background-color:#244c4d">";
   }
   document.getElementById("music").innerHTML = text;
 }
