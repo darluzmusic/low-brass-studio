@@ -80,7 +80,7 @@ div.insertAdjacentHTML('beforeend',"=================" + "<br>");
 }
 function myRepeatbar() {
   const div = document.getElementById("scale");
-div.insertAdjacentHTML('beforeend',"%" + "<br>");
+div.insertAdjacentHTML('beforeend',"                %" + "<br>");
 }
 function scaleFunction() {
 let a = rootSelect.options[rootSelect.selectedIndex].text;
