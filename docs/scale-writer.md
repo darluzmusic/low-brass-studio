@@ -25,6 +25,7 @@
   </select>
   <select id="chordSelect">
     <option value="0,0,0,0,0,0,0,0,0">maj7 | Major</option>
+    <option value="0,0,0,0,0,0,0,0,0">6 | Major</option>
     <option value="0,0,0,0,0,0,1,0,0">7 | Mixolydian</option>
     <option value="0,0,1,0,0,0,1,0,0">-7 | Dorian</option>
     <option value="0,1,1,0,1,1,1,0,1">-7♭5 | Locrian</option>
@@ -33,15 +34,18 @@
     <option value="0,0,0,-1,0,0,1,0,0">7♯11 | Lydian Dominant</option>
     <option value="0,1,0,0,0,1,1,0,-1">7♭9 | 3rd Mode of Bebop (Major)</option>
     <option value="0,1,0,-1,-1,1,1,0,-1">7♯9 | Diminished Whole Tone</option>
-  </select>
+  </select><br>
 <button onclick="scaleFunction()">Add Scale</button>
-<button onclick="myBarline()">Add Barline</button>
+<button onclick="myBarline()">Add |</button>
+<button onclick="myBarlinedbl()">Add ||</button>
+<button onclick="myRepeatbar()">Add %</button>
 <button onclick="clearFunction()">Clear</button>
 <button onclick="editFunction()">Edit</button>
 <button onclick="copyAll()">Copy All</button><br>
 <div id="scale" contenteditable="true"></div>
 <script>
 function copyAll() {
+  alert("Copied!");
   const richTextDiv = document.getElementById("scale");
 
 const clipboardItem = new ClipboardItem({
@@ -61,11 +65,22 @@ function editFunction() {
   document.getElementById("scale").focus();
 }
 function clearFunction() {
-document.getElementById("scale").innerHTML = "";
+  let text;
+  if (confirm("Are you sure?") == true) {
+    document.getElementById("scale").innerHTML = "";
+  }
 }
 function myBarline() {
   const div = document.getElementById("scale");
-div.insertAdjacentHTML('beforeend',"———————————————" + "<br>");
+div.insertAdjacentHTML('beforeend',"–––––––––––––––––––" + "<br>");
+}
+function myBarlinedbl() {
+  const div = document.getElementById("scale");
+div.insertAdjacentHTML('beforeend',"=================" + "<br>");
+}
+function myRepeatbar() {
+  const div = document.getElementById("scale");
+div.insertAdjacentHTML('beforeend',"%" + "<br>");
 }
 function scaleFunction() {
 let a = rootSelect.options[rootSelect.selectedIndex].text;
