@@ -22,7 +22,10 @@
       padding: 10px;
       margin: 0.2vw;
       text-decoration: none;
-}
+    }
+    #button {
+      text-decoration: none;
+    }
   </style>
 </head>
 <body onload="selectFunction()">
@@ -49,20 +52,20 @@
     <option>182-184</option>
     <option>185-187</option>
   </select>
-    <button onclick="exercise_previous(); selectFunction();">⬅️</button>
-    <button onclick="exercise_next(); selectFunction();">➡️</button>
+    <button onclick="pagePrevious(); selectFunction();">⬅️</button>
+    <button onclick="pageNext(); selectFunction();">➡️</button>
       <br>
   <p id="numberSelect"></p>
   <p id="music"></p>
   
   <script>
     //BUTTONS//
-      function exercise_previous() {
+      function pagePrevious() {
           var x = 
       document.getElementById("exerciseSelect").selectedIndex;
       document.getElementById("exerciseSelect").selectedIndex = x - 1;
       }
-      function exercise_next() {
+      function pageNext() {
           var x = 
       document.getElementById("exerciseSelect").selectedIndex;
       document.getElementById("exerciseSelect").selectedIndex = x + 1;
@@ -93,7 +96,10 @@
     }
       var img = "<img id=exercise" + i + " width='100%' src=" + img_path + zero + i + ".jpg>";
       var aud = "<div id=audioControl><audio id=" + i + " controls><source src=" +  aud_path + i + ".mp3></audio><button onclick=audioRestart(" + i + ")>🔃</button></div>";
-      text1 += img + aud + "<br><a href=#top>⬆️</a><br><hr>";
+      var top = "<a id=button href=#top>🔝</a>";
+      var exP = "<a id=button href=#exercise" + (i - 1) + ">⬅️</a>";
+      var exN = "<a id=button href=#exercise" + (i - -1) + ">➡️</a>";
+      text1 += img + aud + "<br>" + top + exP + exN + "<br><hr>";
       text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
     }
     document.getElementById("music").innerHTML = text1;
