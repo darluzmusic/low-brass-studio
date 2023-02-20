@@ -1,8 +1,32 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E1TB</title>
   <style>
+    select {
+      font-family: arial;
+      font-size: 3vw;
+      border-radius: 0.5vw;
+      height: 8vw;
+      text-align: center;
+    }
+    #top {
+      padding-bottom: 1vw;
+      font-family: arial;
+      font-size: 4vw;
+      color: #75ab9a;
+    }
+    #exercises {
+      display:flex;
+      align-items: center;
+      padding-bottom: 1vw;
+      font-family: arial;
+      font-size: 3vw;
+    }
     hr {
-      height:10px;
-      border-radius:25px;
+      height:2vw;
+      border-radius:0.5vw;
       background-color:#75ab9a;
       border-style:none;
     }
@@ -14,24 +38,41 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
+      padding-bottom: 1vw;
     }
     #numberButton {
-      border-radius: 5px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 3vw;
+      border-radius: 0.5vw;
       background-color: #75ab9a;
       color: white;
-      padding: 10px;
+      padding: 2vw;
+      margin: 0.1rem;
+      text-decoration: none;
+    }
+    #nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: left;
+    }
+    #navButton {
+      cursor: pointer;
+      font-size: 3vw;
+      border-radius: 0.5vw;
+      background-color: #75ab9a;
+      color: white;
+      padding: 2vw;
       margin: 0.2vw;
       text-decoration: none;
     }
-    #button {
-      text-decoration: none;
+    #pad {
+      height: 1440px;
     }
   </style>
 </head>
-<body onload="selectFunction()">
-  <h1 id="top">ESSENTIAL ELEMENTS FOR BAND:</h1>
-    <h2>TROMBONE BOOK 1</h2>
-    Exercises:
+<body style="color: white;" onload="selectFunction()">
+  <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>TROMBONE BOOK 1</div>
+    <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
     <option>1-13</option>
     <option>14-26</option>
@@ -52,58 +93,75 @@
     <option>182-184</option>
     <option>185-187</option>
   </select>
-    <button onclick="pagePrevious(); selectFunction();">⬅️</button>
-    <button onclick="pageNext(); selectFunction();">➡️</button>
+    <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
+    <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
+    </div>
       <br>
-  <p id="numberSelect"></p>
-  <p id="music"></p>
-  
+  <div id="numberSelect"></div>
+  <hr>
+  <div id="music"></div>
+  <div id="pad"></div>
+
   <script>
     //BUTTONS//
-      function pagePrevious() {
-          var x = 
+    function pagePrevious() {
+      var x = 
       document.getElementById("exerciseSelect").selectedIndex;
       document.getElementById("exerciseSelect").selectedIndex = x - 1;
       }
-      function pageNext() {
-          var x = 
+    function pageNext() {
+      var x = 
       document.getElementById("exerciseSelect").selectedIndex;
       document.getElementById("exerciseSelect").selectedIndex = x + 1;
       }
-  const aud_dir = "https://e1-assets.s3.us-west-1.amazonaws.com/";
-  const aud_name = "E1TB"
-  const aud_path = `${aud_dir}${aud_name}`;
-  const img_dir = "https://www.essentialelementsinteractive.com/EESONGS/Graphics/"
-  const img_name = "B1Tbn";
-  const img_path = `${img_dir}${img_name}`;
-  function audioRestart(id) {
-        document.getElementById(id).currentTime=0;}
-  function selectFunction() {
-    let text1 = "";
-    let text2 = "";
-    var x = document.getElementById("exerciseSelect").value;
-    const myArray = x.split("-");
-    var i = myArray[0];
-    var num = myArray[1];
-    for (; i <= num; i++) 
-    {
-      if (i < 10) {
-      zero = "00";
-    } else if (i < 100) {
-      zero = "0";
-    } else {
-      zero = "";
+    //RESTART//
+    function audioRestart(id) {
+      var y = document.getElementById(id);   
+      y.currentTime=0;
+      y.pause();
+      }
+    //PLAYBACKRATE//
+    //Needed '' in function call to read as id//
+    function audioRate(l,m) {
+      var r = document.getElementById(l);
+      var v = document.getElementById(m).value;
+      r.playbackRate = v;
     }
-      var img = "<img id=exercise" + i + " width='100%' src=" + img_path + zero + i + ".jpg>";
-      var aud = "<div id=audioControl><audio id=" + i + " controls><source src=" +  aud_path + i + ".mp3></audio><button onclick=audioRestart(" + i + ")>🔃</button></div>";
-      var top = "<a id=button href=#top>🔝</a>";
-      var exP = "<a id=button href=#exercise" + (i - 1) + ">⬅️</a>";
-      var exN = "<a id=button href=#exercise" + (i - -1) + ">➡️</a>";
-      text1 += img + aud + "<br>" + top + exP + exN + "<br><hr>";
-      text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
-    }
-    document.getElementById("music").innerHTML = text1;
-    document.getElementById("numberSelect").innerHTML = text2;
-  }
+    //LOOP//
+    const aud_dir = "https://e1-assets.s3.us-west-1.amazonaws.com/";
+    const aud_name = "E1TB"
+    const aud_path = `${aud_dir}${aud_name}`;
+    const img_dir = "https://www.essentialelementsinteractive.com/EESONGS/Graphics/"
+    const img_name = "B1Tbn";
+    const img_path = `${img_dir}${img_name}`;
+
+    function selectFunction() {
+     let text1 = "";
+     let text2 = "";
+     var x = document.getElementById("exerciseSelect").value;
+     const myArray = x.split("-");
+     var i = myArray[0];
+     var num = myArray[1];
+     for (; i <= num; i++) 
+        {
+         if (i < 10) {
+         zero = "00";
+        } else if (i < 100) {
+         zero = "0";
+        } else {
+         zero = "";
+        }
+        var img = "<img id=exercise" + i + " width='100%' src=" + img_path + zero + i + ".jpg>";
+        var aud = "<audio id=" + i + " controls><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
+        var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
+        var top = "<a id=navButton href=#top>🔝</a>";
+        var exP = "<a id=navButton href=#exercise" + (i - 1) + ">⬅️</a>";
+        var exN = "<a id=navButton href=#exercise" + (i - -1) + ">➡️</a>";
+        text1 += img + "<div id=audioControl>" + aud + rate + "</div><br>" + "<div id=nav>" + top + exP + exN + "</div>" + "<br><hr>";
+        text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
+      }
+       document.getElementById("music").innerHTML = text1;
+       document.getElementById("numberSelect").innerHTML = text2;
+     }
   </script>
   </body>
