@@ -5,64 +5,66 @@
     <title>E1TB</title>
   <style>
     select {
+      color: white;
+      background-color: gray;
       font-family: arial;
-      font-size: 3vw;
-      border-radius: 0.5vw;
-      height: 8vw;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      height: 4.5rem;
       text-align: center;
+      margin: 0.1rem;
     }
     #top {
-      padding-bottom: 1vw;
+      padding-bottom: 0.5rem;
       font-family: arial;
-      font-size: 4vw;
+      font-size: 3rem;
       color: #75ab9a;
     }
     #exercises {
       display:flex;
       align-items: center;
-      padding-bottom: 1vw;
+      padding-bottom: 0.5rem;
       font-family: arial;
-      font-size: 3vw;
-    }
-    hr {
-      height:2vw;
-      border-radius:0.5vw;
-      background-color:#75ab9a;
-      border-style:none;
-    }
-    #audioControl {
-      display: flex;
-      align-items:center;
+      font-size: 3rem;
     }
     #numberSelect {
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      padding-bottom: 1vw;
+      padding-bottom: 0.5rem;
     }
     #numberButton {
       font-family:Arial, Helvetica, sans-serif;
-      font-size: 3vw;
-      border-radius: 0.5vw;
+      font-size: 2rem;
+      border-radius: 0.5rem;
       background-color: #75ab9a;
       color: white;
-      padding: 2vw;
+      padding: 1rem;
       margin: 0.1rem;
       text-decoration: none;
     }
-    #nav {
+    #transport {
+      display: flex;
+      align-items:center;
+      flex-wrap: wrap;
+    }
+    #audioControl {
       display: flex;
       flex-wrap: wrap;
-      align-content: left;
+      align-items:center;
+      margin-right:3rem;
+    }
+    #nav {
+      display: flex;
     }
     #navButton {
       cursor: pointer;
-      font-size: 3vw;
-      border-radius: 0.5vw;
+      font-size: 2rem;
+      border-radius: 0.5rem;
       background-color: #75ab9a;
       color: white;
-      padding: 2vw;
-      margin: 0.2vw;
+      padding: 1rem;
+      margin: 0.1rem;
       text-decoration: none;
     }
     #pad {
@@ -70,7 +72,7 @@
     }
   </style>
 </head>
-<body style="color: white;" onload="selectFunction()">
+<body onload="selectFunction()">
   <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>TROMBONE BOOK 1</div>
     <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
@@ -98,7 +100,10 @@
     </div>
       <br>
   <div id="numberSelect"></div>
-  <hr>
+  <hr style="height:1rem;
+  border-radius:0.5rem;
+  background-color:#75ab9a;
+  border-style:none;">
   <div id="music"></div>
   <div id="pad"></div>
 
@@ -157,7 +162,8 @@
         var top = "<a id=navButton href=#top>🔝</a>";
         var exP = "<a id=navButton href=#exercise" + (i - 1) + ">⬅️</a>";
         var exN = "<a id=navButton href=#exercise" + (i - -1) + ">➡️</a>";
-        text1 += img + "<div id=audioControl>" + aud + rate + "</div><br>" + "<div id=nav>" + top + exP + exN + "</div>" + "<br><hr>";
+        var line = "<hr style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
+        text1 += img + "<div id=transport><div id=audioControl>" + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
         text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
       }
        document.getElementById("music").innerHTML = text1;
