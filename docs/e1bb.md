@@ -70,7 +70,7 @@
   </style>
 </head>
 <body onload="selectFunction()">
-  <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>TROMBONE BOOK 1</div>
+  <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>BARITONE BOOK 1</div>
     <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
     <option>1-13</option>
