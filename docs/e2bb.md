@@ -150,7 +150,7 @@
       r.playbackRate = v;
     }
     //LOOP//
-    const aud_dir = "https://e1-assets.s3.us-west-1.amazonaws.com/";
+    const aud_dir = "https://e2-assets.s3.us-west-1.amazonaws.com/";
     const aud_name = "E2BB"
     const aud_path = `${aud_dir}${aud_name}`;
     const img_dir = "https://www.essentialelementsinteractive.com/EESONGS/Graphics/"
