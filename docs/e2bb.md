@@ -1,6 +1,11 @@
   <head>
-    <title>E2BB</title>
   <style>
+    img {
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
     select {
       color: white;
       background-color: gray;
@@ -12,7 +17,7 @@
       margin: 0.1rem;
     }
     #top {
-      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
       font-family: arial;
       font-size: 3rem;
       color: #75ab9a;
@@ -20,7 +25,6 @@
     #exercises {
       display:flex;
       align-items: center;
-      padding-bottom: 0.5rem;
       font-family: arial;
       font-size: 3rem;
     }
@@ -28,7 +32,6 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      padding-bottom: 0.5rem;
     }
     #numberButton {
       font-family:Arial, Helvetica, sans-serif;
@@ -73,45 +76,25 @@
   <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>BARITONE BOOK 2</div>
     <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
-    <option>1-10</option>
-    <option>11-19</option>
-    <option>20-31</option>
-    <option>32-43</option>
-    <option>44-55</option>
-    <option>56-62</option>
-    <option>63-74</option>
-    <option>75-86</option>
-    <option>87-99</option>
-    <option>100-106</option>
-    <option>107-115</option>
-    <option>116-126</option>
-    <option>127-133</option>
-    <option>134-143</option>
-    <option>144-150</option>
-    <option>151-153</option>
-    <optgroup label="Chorales">
-    <option>154-158</option>
-    </optgroup>
-    <optgroup label="Major Scales">
-    <option>159-162</option>
-    <option>163-166</option>
-    <option>167-170</option>
-    <option>171-174</option>
-    <option>175-178</option>
-    </optgroup>
-    <optgroup label="G, C, D Minor Scales">
-    <option>179-184</option>
-    </optgroup>
-    <optgroup label="Chromatic Scales">
-    <option>185-186</option>
-    </optgroup>
-    <optgroup label="Individual Study">
-    <option>187-198</option>
-    </optgroup>
-    <optgroup label="Solo">
-    <option>199-200</option>
-    </optgroup>
-    </select>
+    <option>1-13</option>
+    <option>14-26</option>
+    <option>27-39</option>
+    <option>40-51</option>
+    <option>52-58</option>
+    <option>59-72</option>
+    <option>73-85</option>
+    <option>86-99</option>
+    <option>100-109</option>
+    <option>110-118</option>
+    <option>119-131</option>
+    <option>132-146</option>
+    <option>147-153</option>
+    <option>154-164</option>
+    <option>165-174</option>
+    <option>175-181</option>
+    <option>182-184</option>
+    <option>185-187</option>
+  </select>
     <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
     <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
     </div>
@@ -135,6 +118,11 @@
       var x = 
       document.getElementById("exerciseSelect").selectedIndex;
       document.getElementById("exerciseSelect").selectedIndex = x + 1;
+      }
+    //PLAY//
+    function audioPlay(id) {
+      var z = document.getElementById(id);
+      z.play();
       }
     //RESTART//
     function audioRestart(id) {
@@ -173,14 +161,15 @@
         } else {
          zero = "";
         }
-        var img = "<img id=exercise" + i + " width='100%' src=" + img_path + zero + i + ".jpg>";
-        var aud = "<audio id=" + i + " controls><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
+        var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
+        var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
+        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
         var top = "<a id=navButton href=#top>🔝</a>";
         var exP = "<a id=navButton href=#exercise" + (i - 1) + ">⬅️</a>";
         var exN = "<a id=navButton href=#exercise" + (i - -1) + ">➡️</a>";
         var line = "<hr style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
-        text1 += img + "<div id=transport><div id=audioControl>" + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
+        text1 += img + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
         text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
       }
        document.getElementById("music").innerHTML = text1;
