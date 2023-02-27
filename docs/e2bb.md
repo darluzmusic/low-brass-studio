@@ -76,25 +76,45 @@
   <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>BARITONE BOOK 2</div>
     <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
-    <option>1-13</option>
-    <option>14-26</option>
-    <option>27-39</option>
-    <option>40-51</option>
-    <option>52-58</option>
-    <option>59-72</option>
-    <option>73-85</option>
-    <option>86-99</option>
-    <option>100-109</option>
-    <option>110-118</option>
-    <option>119-131</option>
-    <option>132-146</option>
-    <option>147-153</option>
-    <option>154-164</option>
-    <option>165-174</option>
-    <option>175-181</option>
-    <option>182-184</option>
-    <option>185-187</option>
-  </select>
+    <option>1-10</option>
+    <option>11-19</option>
+    <option>20-31</option>
+    <option>32-43</option>
+    <option>44-55</option>
+    <option>56-62</option>
+    <option>63-74</option>
+    <option>75-86</option>
+    <option>87-99</option>
+    <option>100-106</option>
+    <option>107-115</option>
+    <option>116-126</option>
+    <option>127-133</option>
+    <option>134-143</option>
+    <option>144-150</option>
+    <option>151-153</option>
+    <optgroup label="Chorales">
+    <option>154-158</option>
+    </optgroup>
+    <optgroup label="Major Scales">
+    <option>159-162</option>
+    <option>163-166</option>
+    <option>167-170</option>
+    <option>171-174</option>
+    <option>175-178</option>
+    </optgroup>
+    <optgroup label="G, C, D Minor Scales">
+    <option>179-184</option>
+    </optgroup>
+    <optgroup label="Chromatic Scales">
+    <option>185-186</option>
+    </optgroup>
+    <optgroup label="Individual Study">
+    <option>187-198</option>
+    </optgroup>
+    <optgroup label="Solo">
+    <option>199-200</option>
+    </optgroup>
+    </select>
     <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
     <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
     </div>
