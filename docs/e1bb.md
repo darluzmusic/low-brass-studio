@@ -1,6 +1,11 @@
   <head>
-    <title>E1BB</title>
   <style>
+    img {
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
     select {
       color: white;
       background-color: gray;
@@ -12,7 +17,7 @@
       margin: 0.1rem;
     }
     #top {
-      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
       font-family: arial;
       font-size: 3rem;
       color: #75ab9a;
@@ -20,7 +25,6 @@
     #exercises {
       display:flex;
       align-items: center;
-      padding-bottom: 0.5rem;
       font-family: arial;
       font-size: 3rem;
     }
@@ -28,7 +32,6 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      padding-bottom: 0.5rem;
     }
     #numberButton {
       font-family:Arial, Helvetica, sans-serif;
@@ -116,6 +119,11 @@
       document.getElementById("exerciseSelect").selectedIndex;
       document.getElementById("exerciseSelect").selectedIndex = x + 1;
       }
+    //PLAY//
+    function audioPlay(id) {
+      var z = document.getElementById(id);
+      z.play();
+      }
     //RESTART//
     function audioRestart(id) {
       var y = document.getElementById(id);   
@@ -153,14 +161,15 @@
         } else {
          zero = "";
         }
-        var img = "<img id=exercise" + i + " width='100%' src=" + img_path + zero + i + ".jpg>";
-        var aud = "<audio id=" + i + " controls><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
+        var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
+        var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
+        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
         var top = "<a id=navButton href=#top>🔝</a>";
         var exP = "<a id=navButton href=#exercise" + (i - 1) + ">⬅️</a>";
         var exN = "<a id=navButton href=#exercise" + (i - -1) + ">➡️</a>";
         var line = "<hr style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
-        text1 += img + "<div id=transport><div id=audioControl>" + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
+        text1 += img + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
         text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
       }
        document.getElementById("music").innerHTML = text1;
