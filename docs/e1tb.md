@@ -161,7 +161,7 @@
         } else {
          zero = "";
         }
-        var img = "<img loading='lazy' id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
+        var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
         var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
