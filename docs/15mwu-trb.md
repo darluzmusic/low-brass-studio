@@ -1,74 +1,74 @@
 <head>
-    <style>
-      img {
-        height: auto;
-        width: 100%;
-        display: inline-block;
-        margin-bottom: 0.5rem;
-      }
-      select {
-        color: white;
-        background-color: gray;
-        font-family: arial;
-        font-size: 2rem;
-        border-radius: 0.5rem;
-        height: 4.5rem;
-        text-align: center;
-        margin: 0.1rem;
-      }
-      #top {
-        margin-bottom: 0.5rem;
-        font-family: arial;
-        font-size: 3rem;
-        color: #75ab9a;
-      }
-      #exercises {
-        display:flex;
-        align-items: center;
-        font-family: arial;
-        font-size: 3rem;
-      }
-      #numberButton {
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 2rem;
-        border-radius: 0.5rem;
-        background-color: #75ab9a;
-        color: white;
-        padding: 1rem;
-        margin: 0.1rem;
-        text-decoration: none;
-      }
-      #transport {
-        display: flex;
-        align-items:center;
-        flex-wrap: wrap;
-      }
-      #audioControl {
-        display: flex;
-        flex-wrap: wrap;
-        align-items:center;
-        margin-right:3rem;
-      }
-      #nav {
-        display: flex;
-      }
-      #navButton {
-        cursor: pointer;
-        font-size: 2rem;
-        border-radius: 0.5rem;
-        background-color: #75ab9a;
-        color: white;
-        padding: 1rem;
-        margin: 0.1rem;
-        text-decoration: none;
-      }
-      #pad {
-        height: 1440px;
-      }
-    </style>
-  </head>
+  <style>
+    img {
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    select {
+      color: white;
+      background-color: gray;
+      font-family: arial;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      height: 4.5rem;
+      text-align: center;
+      margin: 0.1rem;
+    }
+    #top {
+      margin-bottom: 0.5rem;
+      font-family: arial;
+      font-size: 3rem;
+      color: #75ab9a;
+    }
+    #exercises {
+      display:flex;
+      align-items: center;
+      font-family: arial;
+      font-size: 3rem;
+    }
+    #numberButton {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      background-color: #75ab9a;
+      color: white;
+      padding: 1rem;
+      margin: 0.1rem;
+      text-decoration: none;
+    }
+    #transport {
+      display: flex;
+      align-items:center;
+      flex-wrap: wrap;
+    }
+    #audioControl {
+      display: flex;
+      flex-wrap: wrap;
+      align-items:center;
+      margin-right:3rem;
+    }
+    #nav {
+      display: flex;
+    }
+    #navButton {
+      cursor: pointer;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      background-color: #75ab9a;
+      color: white;
+      padding: 1rem;
+      margin: 0.1rem;
+      text-decoration: none;
+    }
+    #pad {
+      height: 1440px;
+    }
+  </style>
+</head>
   <body onload="selectFunction()">
-  <div id="exercises">
+    <div id="exercises">
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="1-1-1">Long Tones</option>
         <option value="2-3-2">Tonguing</option>
@@ -82,22 +82,22 @@
         <option value="12-13-10">Major Scales</option>
         <option value="14-14-11">Upper Range</option>
         <option value="15-15-12">Warm Down</option>        
-    </select>
-      <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
-      <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
-  </div>
+      </select>
+        <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
+        <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
+    </div>
       <div id=navButton onclick=audioPlay()>▶️</div>
       <div id=navButton onclick=audioRestart()>🔃</div>
-    <select id=pbr onchange=audioRate()>
-      <option value='0.5' >x0.5</option>
-      <option value='0.75'>x0.75</option>
-      <option value='1' selected>x1</option>
-    </select>
-    <select id="demoToggle" onchange="selectFunction();">
-      <option value="0">w/ trb</option>
-      <option value="12">w/o trb</option>
-    </select>
-    <audio id="track" preload='none'><source src=></audio>
+      <select id=pbr onchange=audioRate()>
+        <option value='0.5' >x0.5</option>
+        <option value='0.75'>x0.75</option>
+        <option value='1' selected>x1</option>
+      </select>
+      <select id="demoToggle" onchange="selectFunction();">
+        <option value="0">w/ trb</option>
+        <option value="12">w/o trb</option>
+      </select>
+      <audio id="track" preload='none'><source src=></audio>
     <div id="music"></div>
     <div id="pad"></div>
   <script>
