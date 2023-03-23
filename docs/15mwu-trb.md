@@ -68,7 +68,6 @@
   </style>
 </head>
   <body onload="selectFunction()">
-    <div id="exercises">
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="1-1-1">Long Tones</option>
         <option value="2-3-2">Tonguing</option>
@@ -85,7 +84,6 @@
       </select>
         <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
         <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
-    </div>
     <div id=navButton onclick=audioPlay()>▶️</div>
     <div id=navButton onclick=audioRestart()>🔃</div>
       <select id=pbr onchange=audioRate()>
