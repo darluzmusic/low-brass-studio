@@ -86,7 +86,6 @@
       <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
       <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
   </div>
-  <div>
       <div id=navButton onclick=audioPlay()>▶️</div>
       <div id=navButton onclick=audioRestart()>🔃</div>
     <select id=pbr onchange=audioRate()>
@@ -98,7 +97,6 @@
       <option value="0">w/ trb</option>
       <option value="12">w/o trb</option>
     </select>
-  </div>
     <audio id="track" preload='none'><source src=></audio>
     <div id="music"></div>
     <div id="pad"></div>
