@@ -68,7 +68,6 @@
     </style>
   </head>
   <body onload="selectFunction()">
-    <div id="top"></div>
       <div id="exercises">
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="1-1-1">Long Tones</option>
@@ -87,6 +86,7 @@
       <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
       <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
       </div>
+      <div>
         <br>
         <a id=navButton onclick=audioPlay()>▶️</a>
         <a id=navButton onclick=audioRestart()>🔃</a>
@@ -99,6 +99,7 @@
             <option value="0">w/ trb</option>
             <option value="12">w/o trb</option>
         </select>
+      </div>
     <audio id="track" preload='none'><source src=></audio>
     <div id="music"></div>
     <div id="pad"></div>
