@@ -68,7 +68,7 @@
     </style>
   </head>
   <body onload="selectFunction()">
-      <div id="exercises">
+  <div id="exercises">
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="1-1-1">Long Tones</option>
         <option value="2-3-2">Tonguing</option>
@@ -85,21 +85,20 @@
     </select>
       <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
       <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
-      </div>
-      <div>
-        <br>
-        <a id=navButton onclick=audioPlay()>▶️</a>
-        <a id=navButton onclick=audioRestart()>🔃</a>
-        <select id=pbr onchange=audioRate()>
-            <option value='0.5' >x0.5</option>
-            <option value='0.75'>x0.75</option>
-            <option value='1' selected>x1</option>
-        </select>
-        <select id="demoToggle" onchange="selectFunction();">
-            <option value="0">w/ trb</option>
-            <option value="12">w/o trb</option>
-        </select>
-      </div>
+  </div>
+  <div>
+      <div id=navButton onclick=audioPlay()>▶️</div>
+      <div id=navButton onclick=audioRestart()>🔃</div>
+    <select id=pbr onchange=audioRate()>
+      <option value='0.5' >x0.5</option>
+      <option value='0.75'>x0.75</option>
+      <option value='1' selected>x1</option>
+    </select>
+    <select id="demoToggle" onchange="selectFunction();">
+      <option value="0">w/ trb</option>
+      <option value="12">w/o trb</option>
+    </select>
+  </div>
     <audio id="track" preload='none'><source src=></audio>
     <div id="music"></div>
     <div id="pad"></div>
