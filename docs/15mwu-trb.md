@@ -25,6 +25,7 @@
     #exercises {
       display:flex;
       align-items: center;
+      flex-wrap: wrap;
       font-family: arial;
       font-size: 3rem;
     }
