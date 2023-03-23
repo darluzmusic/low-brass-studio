@@ -102,8 +102,7 @@
     <audio id="track" preload='none'><source src=></audio>
     <div id="music"></div>
     <div id="pad"></div>
-  
-    <script>
+  <script>
       //BUTTONS//
       function pagePrevious() {
         var x = 
@@ -158,5 +157,5 @@
          document.getElementById("music").innerHTML = text1;
          document.getElementById("track").src = text2;
        }
-    </script>
-    </body>
+  </script>
+</body>
