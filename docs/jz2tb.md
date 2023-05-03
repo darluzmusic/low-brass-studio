@@ -151,18 +151,12 @@
      let text2 = "";
      var x = document.getElementById("exerciseSelect").value;
      const myArray = x.split("-");
-     var i = myArray[0];
-     var num = myArray[1];
+     var h = myArray[0];
+     var i = parseInt(h);
+     var j = myArray[1];
+     var num = parseInt(j);
      for (; i <= num; i++) 
-        {
-         if (i < 10) {
-         zero = "00";
-        } else if (i < 100) {
-         zero = "0";
-        } else {
-         zero = "";
-        }
-        var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
+        var img = "<img id=exercise" + i + " src=" + img_path + i + ".jpg>";
         var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
