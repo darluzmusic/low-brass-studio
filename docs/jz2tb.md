@@ -156,6 +156,7 @@
      var j = myArray[1];
      var num = parseInt(j);
      for (; i <= num; i++) 
+      {
         var img = "<img id=exercise" + i + " src=" + img_path + i + ".jpg>";
         var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
