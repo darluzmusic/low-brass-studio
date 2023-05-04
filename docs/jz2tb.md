@@ -86,7 +86,6 @@
     <option>47-53</option>
     <option>54-59</option>
     <option>60-65</option>
-    <option>66-65</option>
     <option>66-71</option>
     <option>72-77</option>
     <option>78-84</option>
@@ -95,6 +94,32 @@
     <option>96-98</option>
     <option>99-104</option>
     <option>105-109</option>
+    <option>110-112</option>
+    <option>113-114</option>
+    <option>115-121</option>
+    <option>122-125</option>
+    <option>126-128</option>
+    <option>129-130</option>
+    <option>131-135</option>
+    <option>136-140</option>
+    <option>141-143</option>
+    <option>144-146</option>
+    <option>147-152</option>
+    <option>153-158</option>
+    <option>159-160</option>
+    <option>161-163</option>
+    <option>164-170</option>
+    <option>171-178</option>
+    <option>179-180</option>
+    <option>181-182</option>
+    <option>183-186</option>
+    <option>187-191</option>
+    <option>192-193</option>
+    <option>194-195</option>
+    <option>196-199</option>
+    <option>200-202</option>
+    <option>203-207</option>
+    <option>208-210</option>
   </select>
     <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
     <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
