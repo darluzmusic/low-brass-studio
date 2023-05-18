@@ -73,19 +73,19 @@
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="1-1-1">Air It Out</option>
         <option value="2-2-2">Sound</option>
-        <option value="4-4-3">Tonguing</option>
-        <option value="5-5-4">Extended Slurs</option>
-        <option value="6-6-5">Basic Flex</option>
-        <option value="7-7-6">Flexing the 5th</option>
-        <option value="8-8-7">Interval Flexibility</option>
-        <option value="9-10-8">Broken Triads</option>
-        <option value="11-11-9">Octaflex</option>
-        <option value="12-13-10">Interval Attacks</option>
+        <option value="3-4-3">Tonguing</option>
+        <option value="5-6-4">Extended Slurs</option>
+        <option value="7-7-5">Basic Flex</option>
+        <option value="8-8-6">Flexing the 5th</option>
+        <option value="9-9-7">Interval Flexibility</option>
+        <option value="10-10-8">Broken Triads</option>
+        <option value="11-12-9">Octaflex</option>
+        <option value="13-13-10">Interval Attacks</option>
         <option value="14-14-11">5th Connection</option>
         <option value="15-15-12">Chromatic 4ths</option>
-        <option value="15-15-13">Super 9ths</option>
-        <option value="15-15-14">Control</option>
-        <option value="15-15-15">Pedal Point</option>      
+        <option value="16-17-13">Super 9ths</option>
+        <option value="18-18-14">Control</option>
+        <option value="19-19-15">Pedal Point</option>      
       </select>
       <a id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</a>
       <a id="navButton" onclick="pageNext(); selectFunction();">➡️</a>
