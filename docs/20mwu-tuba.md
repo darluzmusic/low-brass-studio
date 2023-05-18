@@ -153,7 +153,7 @@
        var text2 = path + (k + demo) + ".mp3";
        for (; i <= num; i++) 
           {
-          var img = "<img src=" + path + i + ".png>";
+          var img = "<img src=" + path + i + ".jpg>";
           text1 += img ;
         }
          document.getElementById("music").innerHTML = text1;
