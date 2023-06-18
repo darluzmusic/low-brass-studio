@@ -95,16 +95,16 @@
     <option>182-184</option>
     <option>185-187</option>
   </select>
-    <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
-    <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
+    <div class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
+    <div class="navButton" onclick="pageNext(); selectFunction();">➡️</div>
     </div>
       <br>
   <div id="numberSelect"></div>
+  <div id="music"></div>
   <hr style="height:1rem;
   border-radius:0.5rem;
   background-color:#75ab9a;
   border-style:none;">
-  <div id="music"></div>
   <div id="pad"></div>
 
   <script>
@@ -112,12 +112,18 @@
     function pagePrevious() {
       var x = 
       document.getElementById("exerciseSelect").selectedIndex;
-      document.getElementById("exerciseSelect").selectedIndex = x - 1;
+      if (x > 0) {
+        document.getElementById("exerciseSelect").selectedIndex = x - 1;
+      }
       }
     function pageNext() {
       var x = 
       document.getElementById("exerciseSelect").selectedIndex;
-      document.getElementById("exerciseSelect").selectedIndex = x + 1;
+      var s = 
+      document.getElementById("exerciseSelect").length;
+      if (x < s - 1) {
+        document.getElementById("exerciseSelect").selectedIndex = x + 1;
+      }
       }
     //PLAY//
     function audioPlay(id) {
@@ -173,11 +179,11 @@
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a class=navButton onclick=audioRestart(" + i + ")>🔃</a>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
         var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
-        var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#exercise" + (i - 1) + ">⬅️</a>";
-        var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#exercise" + (i - -1) + ">➡️</a>";
-        var line = "<hr style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
-        text1 += img + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
-        text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
+        var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</a>";
+        var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - -1) + ">➡️</a>";
+        var line = "<hr id=line" + i + " style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
+        text1 += line + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + img;
+        text2 += "<a id=numberButton href=#line" + i + "> " + i + "</a>"
       }
        document.getElementById("music").innerHTML = text1;
        document.getElementById("numberSelect").innerHTML = text2;
