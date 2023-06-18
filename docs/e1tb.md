@@ -1,4 +1,4 @@
-  <head>
+<head>
   <style>
     img {
       height: auto;
@@ -57,7 +57,7 @@
     #nav {
       display: flex;
     }
-    #navButton {
+    .navButton {
       cursor: pointer;
       font-size: 2rem;
       border-radius: 0.5rem;
@@ -122,13 +122,20 @@
     //PLAY//
     function audioPlay(id) {
       var z = document.getElementById(id);
-      z.play();
+      if (z.paused || z.ended) {
+        z.play();
+        document.getElementById("transport" + id).innerHTML = "⏸️";
+      } else {
+        z.pause();
+        document.getElementById("transport" + id).innerHTML = "▶️";
+      }
       }
     //RESTART//
     function audioRestart(id) {
       var y = document.getElementById(id);   
       y.currentTime=0;
       y.pause();
+      document.getElementById("transport" + id).innerHTML = "▶️";
       }
     //PLAYBACKRATE//
     //Needed '' in function call to read as id//
@@ -162,12 +169,12 @@
          zero = "";
         }
         var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
-        var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
-        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
+        var play = "<a class=navButton id=transport" + i + " onclick=audioPlay(" + i + ")>▶️</a>"
+        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a class=navButton onclick=audioRestart(" + i + ")>🔃</a>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
-        var top = "<a id=navButton href=#top>🔝</a>";
-        var exP = "<a id=navButton href=#exercise" + (i - 1) + ">⬅️</a>";
-        var exN = "<a id=navButton href=#exercise" + (i - -1) + ">➡️</a>";
+        var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
+        var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#exercise" + (i - 1) + ">⬅️</a>";
+        var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#exercise" + (i - -1) + ">➡️</a>";
         var line = "<hr style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
         text1 += img + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
         text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
