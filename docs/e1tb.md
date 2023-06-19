@@ -203,6 +203,7 @@
         } else {
          zero = "";
         }
+        //LOOP ELEMENTS//
         var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
         var play = "<span class=navButton id=transport" + i + " onclick=audioPlay(" + i + ")>▶️</span>"
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
