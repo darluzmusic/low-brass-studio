@@ -70,6 +70,9 @@
       margin: 0.1rem;
       text-decoration: none;
     }
+    .navButton:hover {
+      text-decoration:none;
+    }
     #pad {
       height: 1440px;
     }
