@@ -32,7 +32,6 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      text-decoration: none;
     }
     .numberButton {
       font-family:Arial, Helvetica, sans-serif;
@@ -44,11 +43,13 @@
       margin: 0.1rem;
       text-decoration: none;
     }
+    .numberButton:hover {
+      text-decoration:none;
+    }
     #transport {
       display: flex;
       align-items:center;
       flex-wrap: wrap;
-      text-decoration: none;
     }
     #audioControl {
       display: flex;
@@ -74,7 +75,7 @@
     }
   </style>
 </head>
-<body onload="selectFunction()">
+<body onload="selectFunction()" style="background-color:white">
   <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>TROMBONE BOOK 1</div>
     <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
