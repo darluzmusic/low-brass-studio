@@ -201,12 +201,12 @@
         var play = "<span class=navButton id=transport" + i + " onclick=audioPlay(" + i + ")>▶️</span>"
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
-        var top = "<span class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</span>";
-        var exP = "<span class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</span>";
-        var exN = "<span class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - -1) + ">➡️</span>";
+        var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
+        var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</a>";
+        var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - -1) + ">➡️</a>";
         var line = "<hr id=line" + i + " style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
         text1 += line + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + img;
-        text2 += "<span class=numberButton href=#line" + i + "> " + i + "</span>"
+        text2 += "<a class=numberButton href=#line" + i + "> " + i + "</a>"
       }
        document.getElementById("music").innerHTML = text1;
        document.getElementById("numberSelect").innerHTML = text2;
