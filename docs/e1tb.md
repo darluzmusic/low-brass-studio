@@ -32,6 +32,7 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
+      text-decoration: none;
     }
     .numberButton {
       font-family:Arial, Helvetica, sans-serif;
@@ -47,6 +48,7 @@
       display: flex;
       align-items:center;
       flex-wrap: wrap;
+      text-decoration: none;
     }
     #audioControl {
       display: flex;
