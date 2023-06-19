@@ -1,4 +1,4 @@
-  <head>
+<head>
   <style>
     img {
       height: auto;
@@ -33,7 +33,7 @@
       flex-wrap: wrap;
       align-content: space-between;
     }
-    #numberButton {
+    .numberButton {
       font-family:Arial, Helvetica, sans-serif;
       font-size: 2rem;
       border-radius: 0.5rem;
@@ -42,6 +42,9 @@
       padding: 1rem;
       margin: 0.1rem;
       text-decoration: none;
+    }
+    .numberButton:hover {
+      text-decoration:none;
     }
     #transport {
       display: flex;
@@ -57,7 +60,7 @@
     #nav {
       display: flex;
     }
-    #navButton {
+    .navButton {
       cursor: pointer;
       font-size: 2rem;
       border-radius: 0.5rem;
@@ -67,12 +70,15 @@
       margin: 0.1rem;
       text-decoration: none;
     }
+    .navButton:hover {
+      text-decoration:none;
+    }
     #pad {
       height: 1440px;
     }
   </style>
 </head>
-<body onload="selectFunction()">
+<body onload="selectFunction()" style="background-color:white">
   <div id="top" style="font-family:Arial, Helvetica, sans-serif">ESSENTIAL ELEMENTS FOR BAND:<br>BARITONE BOOK 1</div>
     <div id="exercises">
     <select id="exerciseSelect" onchange="selectFunction()">
@@ -95,40 +101,76 @@
     <option>182-184</option>
     <option>185-187</option>
   </select>
-    <div id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</div>
-    <div id="navButton" onclick="pageNext(); selectFunction();">➡️</div>
+    <span class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</span>
+    <span class="navButton" onclick="pageNext(); selectFunction();">➡️</span>
+    <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
     </div>
       <br>
   <div id="numberSelect"></div>
+  <div id="music"></div>
   <hr style="height:1rem;
   border-radius:0.5rem;
   background-color:#75ab9a;
   border-style:none;">
-  <div id="music"></div>
   <div id="pad"></div>
 
   <script>
+    //FULLSCREEN//
+    var elem = document.documentElement;  
+    function fullScreen () {
+    if (!document.fullscreenElement) {
+      if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+      }
+      return;
+      }
+
+      if (document.exitFullscreen) {
+      document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+      }
+      }
     //BUTTONS//
     function pagePrevious() {
       var x = 
       document.getElementById("exerciseSelect").selectedIndex;
-      document.getElementById("exerciseSelect").selectedIndex = x - 1;
+      if (x > 0) {
+        document.getElementById("exerciseSelect").selectedIndex = x - 1;
+      }
       }
     function pageNext() {
       var x = 
       document.getElementById("exerciseSelect").selectedIndex;
-      document.getElementById("exerciseSelect").selectedIndex = x + 1;
+      var s = 
+      document.getElementById("exerciseSelect").length;
+      if (x < s - 1) {
+        document.getElementById("exerciseSelect").selectedIndex = x + 1;
+      }
       }
     //PLAY//
     function audioPlay(id) {
       var z = document.getElementById(id);
-      z.play();
+      if (z.paused || z.ended) {
+        z.play();
+        document.getElementById("transport" + id).innerHTML = "⏸️";
+      } else {
+        z.pause();
+        document.getElementById("transport" + id).innerHTML = "▶️";
+      }
       }
     //RESTART//
     function audioRestart(id) {
       var y = document.getElementById(id);   
       y.currentTime=0;
       y.pause();
+      document.getElementById("transport" + id).innerHTML = "▶️";
       }
     //PLAYBACKRATE//
     //Needed '' in function call to read as id//
@@ -161,16 +203,17 @@
         } else {
          zero = "";
         }
+        //LOOP ELEMENTS//
         var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
-        var play = "<a id=navButton onclick=audioPlay(" + i + ")>▶️</a>"
-        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><a id=navButton onclick=audioRestart(" + i + ")>🔃</a>";
+        var play = "<span class=navButton id=transport" + i + " onclick=audioPlay(" + i + ")>▶️</span>"
+        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_path + i + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
-        var top = "<a id=navButton href=#top>🔝</a>";
-        var exP = "<a id=navButton href=#exercise" + (i - 1) + ">⬅️</a>";
-        var exN = "<a id=navButton href=#exercise" + (i - -1) + ">➡️</a>";
-        var line = "<hr style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
-        text1 += img + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + "<br>" + line;
-        text2 += "<a id=numberButton href=#exercise" + i + "> " + i + "</a>"
+        var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
+        var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</a>";
+        var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - -1) + ">➡️</a>";
+        var line = "<hr id=line" + i + " style=height:1rem;border-radius:0.5rem;background-color:#75ab9a;border-style:none;>"
+        text1 += line + "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + img;
+        text2 += "<a class=numberButton href=#line" + i + "> " + i + "</a>"
       }
        document.getElementById("music").innerHTML = text1;
        document.getElementById("numberSelect").innerHTML = text2;
