@@ -123,7 +123,7 @@
       document.getElementById("fs").innerHTML = "❌";
       return;
       }
-            
+
       if (document.exitFullscreen) {
       document.exitFullscreen();
       } else if (document.webkitExitFullscreen) { /* Safari */
@@ -132,8 +132,6 @@
       document.msExitFullscreen();
       }
       document.getElementById("fs").innerHTML = "⛶";
-      }
-
       }
     //BUTTONS//
     function pagePrevious() {
