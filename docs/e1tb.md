@@ -120,7 +120,6 @@
       } else if (elem.msRequestFullscreen) { /* IE11 */
       elem.msRequestFullscreen();
       }
-      document.getElementById("fs").innerHTML = "❌";
       return;
       }
 
@@ -131,7 +130,6 @@
       } else if (document.msExitFullscreen) { /* IE11 */
       document.msExitFullscreen();
       }
-      document.getElementById("fs").innerHTML = "⛶";
       }
     //BUTTONS//
     function pagePrevious() {
