@@ -25,11 +25,15 @@
     #exercises {
       display:flex;
       align-items: center;
-      flex-wrap: wrap;
       font-family: arial;
       font-size: 3rem;
     }
-    #numberButton {
+    #numberSelect {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    .numberButton {
       font-family:Arial, Helvetica, sans-serif;
       font-size: 2rem;
       border-radius: 0.5rem;
@@ -38,6 +42,9 @@
       padding: 1rem;
       margin: 0.1rem;
       text-decoration: none;
+    }
+    .numberButton:hover {
+      text-decoration:none;
     }
     #transport {
       display: flex;
@@ -53,7 +60,7 @@
     #nav {
       display: flex;
     }
-    #navButton {
+    .navButton {
       cursor: pointer;
       font-size: 2rem;
       border-radius: 0.5rem;
@@ -63,12 +70,15 @@
       margin: 0.1rem;
       text-decoration: none;
     }
+    .navButton:hover {
+      text-decoration:none;
+    }
     #pad {
       height: 1440px;
     }
   </style>
 </head>
-  <body onload="selectFunction()">
+<body onload="selectFunction()" style="background-color:white">
     <div id="exercises">
       <select id="exerciseSelect" onchange="selectFunction()">
         <option value="1-1-1">Long Tones</option>
@@ -84,10 +94,11 @@
         <option value="14-14-11">Upper Range</option>
         <option value="15-15-12">Warm Down</option>        
       </select>
-      <a id="navButton" onclick="pagePrevious(); selectFunction();">⬅️</a>
-      <a id="navButton" onclick="pageNext(); selectFunction();">➡️</a>
-      <a id="navButton" onclick="audioPlay();">▶️</a>
-      <a id="navButton" onclick="audioRestart();">🔃</a>
+      <a class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</a>
+      <a class="navButton" onclick="pageNext(); selectFunction();">➡️</a>
+      <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
+      <a class="navButton" onclick="audioPlay();">▶️</a>
+      <a class="navButton" onclick="audioRestart();">🔃</a>
       <select id="pbr" onchange="audioRate();">
         <option value="0.5" >x0.5</option>
         <option value="0.75">x0.75</option>
@@ -102,36 +113,70 @@
     <div id="music"></div>
     <div id="pad"></div>
   <script>
-      //BUTTONS//
-      function pagePrevious() {
-        var x = 
-        document.getElementById("exerciseSelect").selectedIndex;
-        document.getElementById("exerciseSelect").selectedIndex = x - 1;
-        }
-      function pageNext() {
-        var x = 
-        document.getElementById("exerciseSelect").selectedIndex;
-        document.getElementById("exerciseSelect").selectedIndex = x + 1;
-        }
-      //PLAY//
-      function audioPlay() {
-        var z = document.getElementById("track");
-        z.play();
-        }
-      //RESTART//
-      function audioRestart() {
-        var y = document.getElementById("track");   
-        y.currentTime=0;
-        y.pause();
-        }
-      //PLAYBACKRATE//
-      //Needed '' in function call to read as id//
-      function audioRate() {
-        var r = document.getElementById("track");
-        var v = document.getElementById("pbr").value;
-        r.playbackRate = v;
+    //FULLSCREEN//
+    var elem = document.documentElement;  
+    function fullScreen () {
+    if (!document.fullscreenElement) {
+      if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
       }
-      //LOOP//
+      return;
+      }
+      if (document.exitFullscreen) {
+      document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+      }
+      }
+    //BUTTONS//
+    function pagePrevious() {
+      var x = 
+      document.getElementById("exerciseSelect").selectedIndex;
+      if (x > 0) {
+        document.getElementById("exerciseSelect").selectedIndex = x - 1;
+      }
+      }
+    function pageNext() {
+      var x = 
+      document.getElementById("exerciseSelect").selectedIndex;
+      var s = 
+      document.getElementById("exerciseSelect").length;
+      if (x < s - 1) {
+        document.getElementById("exerciseSelect").selectedIndex = x + 1;
+      }
+      }
+    //PLAY//
+    function audioPlay(id) {
+      var z = document.getElementById(id);
+      if (z.paused || z.ended) {
+        z.play();
+        document.getElementById("transport" + id).innerHTML = "⏸️";
+      } else {
+        z.pause();
+        document.getElementById("transport" + id).innerHTML = "▶️";
+      }
+      }
+    //RESTART//
+    function audioRestart(id) {
+      var y = document.getElementById(id);   
+      y.currentTime=0;
+      y.pause();
+      document.getElementById("transport" + id).innerHTML = "▶️";
+      }
+    //PLAYBACKRATE//
+    //Needed '' in function call to read as id//
+    function audioRate(l,m) {
+      var r = document.getElementById(l);
+      var v = document.getElementById(m).value;
+      r.playbackRate = v;
+    }
+    //LOOP//
       const dir = "https://low-brass-assets.s3.us-west-1.amazonaws.com/";
       const fol = "15mwu-trombone/";
       const path = `${dir}${fol}`;
