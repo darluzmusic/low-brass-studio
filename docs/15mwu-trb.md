@@ -97,7 +97,7 @@
       <a class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</a>
       <a class="navButton" onclick="pageNext(); selectFunction();">➡️</a>
       <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
-      <a class="navButton" onclick="audioPlay();">▶️</a>
+      <a id="transport" class="navButton" onclick="audioPlay();">▶️</a>
       <a class="navButton" onclick="audioRestart();">🔃</a>
       <select id="pbr" onchange="audioRate();">
         <option value="0.5" >x0.5</option>
@@ -152,14 +152,14 @@
       }
       }
     //PLAY//
-    function audioPlay(id) {
-      var z = document.getElementById(id);
+    function audioPlay() {
+      var z = document.getElementById("track");
       if (z.paused || z.ended) {
         z.play();
-        document.getElementById("transport" + id).innerHTML = "⏸️";
+        document.getElementById("transport").innerHTML = "⏸️";
       } else {
         z.pause();
-        document.getElementById("transport" + id).innerHTML = "▶️";
+        document.getElementById("transport").innerHTML = "▶️";
       }
       }
     //RESTART//
