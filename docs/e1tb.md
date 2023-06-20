@@ -163,6 +163,9 @@
         z.pause();
         document.getElementById("transport" + id).innerHTML = "▶️";
       }
+      z.onended = function() {
+        document.getElementById("transport" + id).innerHTML = "▶️";
+      }
       }
     //RESTART//
     function audioRestart(id) {
