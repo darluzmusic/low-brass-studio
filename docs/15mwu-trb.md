@@ -25,13 +25,9 @@
     #exercises {
       display:flex;
       align-items: center;
+      flex-wrap: wrap;
       font-family: arial;
       font-size: 3rem;
-    }
-    #numberSelect {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: space-between;
     }
     .numberButton {
       font-family:Arial, Helvetica, sans-serif;
