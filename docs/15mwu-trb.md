@@ -163,11 +163,11 @@
       }
       }
     //RESTART//
-    function audioRestart(id) {
-      var y = document.getElementById(id);   
+    function audioRestart() {
+      var y = document.getElementById("track");   
       y.currentTime=0;
       y.pause();
-      document.getElementById("transport" + id).innerHTML = "▶️";
+      document.getElementById("transport").innerHTML = "▶️";
       }
     //PLAYBACKRATE//
     //Needed '' in function call to read as id//
