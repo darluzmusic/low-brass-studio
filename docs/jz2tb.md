@@ -206,7 +206,8 @@
       r.playbackRate = v;
     }
     //LOOP//
-    const dir = "https://low-brass-assets.s3.us-west-1.amazonaws.com/jz2/audio/";
+    const aud_dir = "https://low-brass-assets.s3.us-west-1.amazonaws.com/jz2/audio/";
+    const img_dir = "https://low-brass-assets.s3.us-west-1.amazonaws.com/jz2/graphics/";
 
     function selectFunction() {
      let text1 = "";
@@ -220,9 +221,9 @@
      for (; i <= num; i++) 
       {
         //LOOP ELEMENTS//
-        var img = "<img id=exercise" + i + " src=" + dir + i + ".jpg>";
+        var img = "<img id=exercise" + i + " src=" + img_dir + i + ".jpg>";
         var play = "<span class=navButton id=transport" + i + " onclick=audioPlay(" + i + ")>▶️</span>"
-        var aud = "<audio id=" + i + " preload='none'><source src=" +  dir + i + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
+        var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_dir + i + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
         var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
         var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
         var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</a>";
