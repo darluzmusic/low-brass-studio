@@ -24,13 +24,13 @@
   <option value="0,5,10,15,20,25,30,35,40">C♭</option>  
   </select>
   <select id="chordSelect">
-    <option value="0,0,0,0,0,0,0,0,0">maj7 | Major</option>
-    <option value="0,0,0,0,0,0,0,0,0">6 | Major</option>
+    <option value="0,0,0,0,0,0,0,0,0">△, maj7, 6 | Major</option>
     <option value="0,0,0,0,0,0,1,0,0">7 | Mixolydian</option>
     <option value="0,0,1,0,0,0,1,0,0">-7 | Dorian</option>
-    <option value="0,1,1,0,1,1,1,0,1">-7♭5 | Locrian</option>
-    <option value="0,0,1,0,1,1,2,1,2">°7 | Diminished</option>
     <option value="0,0,0,-1,0,0,0,0,0">maj+4 | Lydian</option>
+    <option value="0,1,1,0,1,1,1,0,1">∅7, -7♭5 | Locrian</option>
+    <option value="0,0,1,0,1,1,2,1,2">°7 | Diminished</option>
+    <option value="0,0,0,-1,-1,-1,1,1,0">7+, 7aug | Whole Tone</option>
     <option value="0,0,0,-1,0,0,1,0,0">7♯11 | Lydian Dominant</option>
     <option value="0,1,0,0,0,1,1,0,-1">7♭9 | 3rd Mode of Bebop (Major)</option>
     <option value="0,1,0,-1,-1,1,1,0,-1">7♯9 | Diminished Whole Tone</option>
