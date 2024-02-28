@@ -21,11 +21,29 @@
       font-size: 3rem;
       color: #75ab9a;
     }
-    #tunes {
+    #exercises {
       display:flex;
       align-items: center;
       font-family: arial;
       font-size: 3rem;
+    }
+    #numberSelect {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    .numberButton {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      background-color: #75ab9a;
+      color: white;
+      padding: 1rem;
+      margin: 0.1rem;
+      text-decoration: none;
+    }
+    .numberButton:hover {
+      text-decoration:none;
     }
     #transport {
       display: flex;
@@ -61,7 +79,7 @@
 <body onload="selectFunction()">
       <div id='tunes'>
       <select id="tuneSelect" onchange="selectFunction()">
-<option value="10-10-241" selected>10 African Flower Petite Fleur Africaine</option>
+        <option value="10-10-241">10 African Flower Petite Fleur Africaine</option>
 <option value="11-11-241">11 Afro Blue</option>
 <option value="12-12-241">12 Afternoon In Paris</option>
 <option value="13-13-3">13 Airegin🎵</option>
@@ -462,12 +480,8 @@
 <option value="461-461-240">461 Young At Heart🎵</option>
 <option value="462-462-239">462 Youre Nobody til Somebody Loves You🎵</option>
     </select>
-    <span class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</span>
-    <span class="navButton" onclick="pageNext(); selectFunction();">➡️</span>
-    <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
+    <div id="music"></div>
     </div>
-      <br>
-      <div id="music"></div>
     <script>
     //FULLSCREEN//
     var elem = document.documentElement;  
@@ -493,18 +507,18 @@
     //BUTTONS//
     function pagePrevious() {
       var x = 
-      document.getElementById("tuneSelect").selectedIndex;
+      document.getElementById("exerciseSelect").selectedIndex;
       if (x > 0) {
-        document.getElementById("tuneSelect").selectedIndex = x - 1;
+        document.getElementById("exerciseSelect").selectedIndex = x - 1;
       }
       }
     function pageNext() {
       var x = 
-      document.getElementById("tuneSelect").selectedIndex;
+      document.getElementById("exerciseSelect").selectedIndex;
       var s = 
-      document.getElementById("tuneSelect").length;
+      document.getElementById("exerciseSelect").length;
       if (x < s - 1) {
-        document.getElementById("tuneSelect").selectedIndex = x + 1;
+        document.getElementById("exerciseSelect").selectedIndex = x + 1;
       }
       }
     //PLAY//
@@ -540,7 +554,8 @@
     const img = "bass-clef_Page_";
     const dir_img = `${dir}${img}`;
     function selectFunction() {
-      let text1 = "";
+      let text_1 = "";
+      let text_2 = "";
       var x = document.getElementById("tuneSelect").value;
       const myArray = x.split("-");
       var i = myArray[0];
@@ -549,28 +564,21 @@
       for (j = myArray[2]; j <= lim; j++)
       {
         if (j < 10) {
-        zero_aud = "00";
+        zero = "00";
       } else if (j < 100) {
-        zero_aud = "0";
+        zero = "0";
       } else {
-        zero_aud = "";
-      }
-      for (; i <= num; i++) 
-      {
-        if (i < 10) {
-        zero_img = "00";
-      } else if (i < 100) {
-        zero_img = "0";
-      } else {
-        zero_img = "";
-      }
+        zero = "";
       }
       //LOOP ELEMENTS//
-        var img = "<img id=exercise" + i + " src=" + dir_img + zero_img + i + ".png>";
+        var img = "<img id=exercise" + i + " src=" + img_path + zero + i + ".jpg>";
         var play = "<span class=navButton id=transport" + j + " onclick=audioPlay(" + j + ")>▶️</span>"
-        var aud = "<audio id=" + j + " preload='none'><source src=" +  dir + zero_aud + j + ".mp3></audio><span class=navButton onclick=audioRestart(" + j + ")>🔃</span>";
+        var aud = "<audio id=" + j + " preload='none'><source src=" +  aud_path + j + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
         var rate = "<select id=pbr" + j + " onchange=audioRate(" + j + ",'pbr" + j + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
-        text1 += "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + "</div></div>" + img;
+        var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
+        var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</a>";
+        var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - -1) + ">➡️</a>";
+        text1 += "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + top + exP + exN + "</div></div>" + img;
       }
       document.getElementById("music").innerHTML = text1;
     }
