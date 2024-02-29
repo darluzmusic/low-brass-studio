@@ -1,13 +1,67 @@
-<style>
-    #tune_select {
-  margin: auto;
-  text-align: center;
+  <style>
+    img {
+      height: auto;
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0.5rem;
     }
-</style>
+    select {
+      color: white;
+      background-color: gray;
+      font-family: arial;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      height: 4.5rem;
+      text-align: left;
+      margin: 0.1rem;
+    }
+    #top {
+      margin-bottom: 0.5rem;
+      font-family: arial;
+      font-size: 3rem;
+      color: #75ab9a;
+    }
+    #tunes {
+      display:flex;
+      align-items: center;
+      font-family: arial;
+      font-size: 3rem;
+    }
+    #transport {
+      display: flex;
+      align-items:center;
+      flex-wrap: wrap;
+    }
+    #audioControl {
+      display: flex;
+      flex-wrap: wrap;
+      align-items:center;
+      margin-right:3rem;
+    }
+    #nav {
+      display: flex;
+    }
+    .navButton {
+      cursor: pointer;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      background-color: #75ab9a;
+      color: white;
+      padding: 1rem;
+      margin: 0.1rem;
+      text-decoration: none;
+    }
+    .navButton:hover {
+      text-decoration:none;
+    }
+    #pad {
+      height: 1440px;
+    }
+  </style>
 <body onload="selectFunction()">
-      <div id='tune_select'>
-      <select id="mySelect" onchange="selectFunction()">
-        <option value="10-10-241">10 African Flower Petite Fleur Africaine</option>
+      <div id='tunes'>
+      <select id="tuneSelect" onchange="selectFunction()">
+<option value="10-10-241" selected>10 African Flower Petite Fleur Africaine</option>
 <option value="11-11-241">11 Afro Blue</option>
 <option value="12-12-241">12 Afternoon In Paris</option>
 <option value="13-13-3">13 Airegin🎵</option>
@@ -408,18 +462,88 @@
 <option value="461-461-240">461 Young At Heart🎵</option>
 <option value="462-462-239">462 Youre Nobody til Somebody Loves You🎵</option>
     </select>
-    <div id="audio"></div>
-    <div id="music"></div>
+    <span class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</span>
+    <span class="navButton" onclick="pageNext(); selectFunction();">➡️</span>
+    <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
     </div>
-    
+      <br>
+      <div id="audio"></div>
+      <div id="music"></div>
     <script>
+    //FULLSCREEN//
+    var elem = document.documentElement;  
+    function fullScreen () {
+    if (!document.fullscreenElement) {
+      if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+      }
+      return;
+      }
+      if (document.exitFullscreen) {
+      document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+      }
+      }
+    //BUTTONS//
+    function pagePrevious() {
+      var x = 
+      document.getElementById("tuneSelect").selectedIndex;
+      if (x > 0) {
+        document.getElementById("tuneSelect").selectedIndex = x - 1;
+      }
+      }
+    function pageNext() {
+      var x = 
+      document.getElementById("tuneSelect").selectedIndex;
+      var s = 
+      document.getElementById("tuneSelect").length;
+      if (x < s - 1) {
+        document.getElementById("tuneSelect").selectedIndex = x + 1;
+      }
+      }
+    //PLAY//
+    function audioPlay(id) {
+      var z = document.getElementById(id);
+      if (z.paused || z.ended) {
+        z.play();
+        document.getElementById("transport" + id).innerHTML = "⏸️";
+      } else {
+        z.pause();
+        document.getElementById("transport" + id).innerHTML = "▶️";
+      }
+      z.onended = function() {
+        document.getElementById("transport" + id).innerHTML = "▶️";
+      }
+      }
+    //RESTART//
+    function audioRestart(id) {
+      var y = document.getElementById(id);   
+      y.currentTime=0;
+      y.pause();
+      document.getElementById("transport" + id).innerHTML = "▶️";
+      }
+    //PLAYBACKRATE//
+    //Needed '' in function call to read as id//
+    function audioRate(l,m) {
+      var r = document.getElementById(l);
+      var v = document.getElementById(m).value;
+      r.playbackRate = v;
+    }
+    //LOOP//
     const dir = "https://rb-6e-v1.s3.us-west-1.amazonaws.com/";
     const img = "bass-clef_Page_";
     const dir_img = `${dir}${img}`;
     function selectFunction() {
       let text_1 = "";
       let text_2 = "";
-      var x = document.getElementById("mySelect").value;
+      var x = document.getElementById("tuneSelect").value;
       const myArray = x.split("-");
       var i = myArray[0];
       var num = myArray[1];
@@ -433,7 +557,10 @@
       } else {
         zero = "";
       }
-        text_1 += "<audio controls> <source src=" + dir + zero + j + ".mp3></audio>";
+        var rate = "<select id=pbr" + j + " onchange=audioRate(" + j + ",'pbr" + j + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
+        var aud = "<audio id=" + j + " preload='none'><source src=" +  dir + zero + j + ".mp3></audio><span class=navButton onclick=audioRestart(" + j + ")>🔃</span>";
+        var play = "<span class=navButton id=transport" + j + " onclick=audioPlay(" + j + ")>▶️</span>"
+        text_1 += "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + "</div></div>";
       }
       for (; i <= num; i++) 
       {
@@ -444,7 +571,8 @@
       } else {
         zero = "";
       }
-        text_2 +="<img src=" + dir_img + zero + i + ".png>";
+      var img = "<img id=exercise" + i + " src=" + dir_img + zero + i + ".png>";
+        text_2 += img;
       }
       document.getElementById("audio").innerHTML = text_1;
       document.getElementById("music").innerHTML = text_2;
