@@ -23,6 +23,7 @@
     }
     #tunes {
       display:flex;
+      flex-wrap: wrap;
       align-items: center;
       font-family: arial;
       font-size: 3rem;
@@ -34,7 +35,6 @@
     }
     #audioControl {
       display: flex;
-      flex-wrap: wrap;
       align-items:center;
       margin-right:3rem;
     }
@@ -59,8 +59,8 @@
     }
   </style>
 <body onload="selectFunction()">
-      <div id='tunes'>
-      <select id="tuneSelect" onchange="selectFunction()">
+      <div id='tunes' >
+      <select style="width: 18rem;" id="tuneSelect" onchange="selectFunction()">
 <option value="10-10-241" selected>10 African Flower Petite Fleur Africaine</option>
 <option value="11-11-241">11 Afro Blue</option>
 <option value="12-12-241">12 Afternoon In Paris</option>
@@ -465,9 +465,8 @@
     <span class="navButton" onclick="pagePrevious(); selectFunction();">⬅️</span>
     <span class="navButton" onclick="pageNext(); selectFunction();">➡️</span>
     <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
-    </div>
-      <br>
       <div id="audio"></div>
+    </div>
       <div id="music"></div>
     <script>
     //FULLSCREEN//
@@ -571,8 +570,8 @@
       } else {
         zero = "";
       }
-      var img = "<img id=exercise" + i + " src=" + dir_img + zero + i + ".png>";
-        text_2 += img;
+      var img = "<img id=tune" + i + " src=" + dir_img + zero + i + ".png>";
+        text_2 += "<a href=#tune" + (i - -1) + ">" + img + "</a>";
       }
       document.getElementById("audio").innerHTML = text_1;
       document.getElementById("music").innerHTML = text_2;
