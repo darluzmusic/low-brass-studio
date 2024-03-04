@@ -58,7 +58,7 @@
       height: 1440px;
     }
   </style>
-<body onload="selectFunction()">
+<body onload="selectFunction()" style="background-color:white">
       <div id='tunes' >
       <select style="width: 18rem;" id="tuneSelect" onchange="selectFunction()">
 <option value="10-10-241" selected>10 African Flower Petite Fleur Africaine</option>
