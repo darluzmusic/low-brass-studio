@@ -76,7 +76,7 @@
 </head>
 <body onload="selectFunction()" style="background-color:white">
     <div id="exercises">
-      <select id="exerciseSelect" onchange="selectFunction()">
+      <select id="exerciseSelect" onchange="selectFunction(); audioRestart(); audioRate('track','pbr')">
         <option value="1-1-1">1. Waltz</option>
         <option value="2-2-2">2. Choral</option>
         <option value="3-3-3">3. Humming Song</option>
@@ -93,8 +93,8 @@
         <option value="14-14-14">14. Minuet</option>
         <option value="15-15-15">15. The Prince of Denmark's March</option>
       </select>
-      <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction();">⬅️</a>
-      <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction();">➡️</a>
+      <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction(); audioRate('track','pbr')">⬅️</a>
+      <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction(); audioRate('track','pbr')">➡️</a>
       <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
       <a id="transport" class="navButton" onclick="audioPlay();">▶️</a>
       <a class="navButton" onclick="audioRestart();">🔃</a>
@@ -103,7 +103,7 @@
         <option value="0.75">x0.75</option>
         <option value="1" selected>x1</option>
       </select>
-      <select id="demoToggle" onchange="audioRestart(); selectFunction();">
+      <select id="demoToggle" onchange="audioRestart(); selectFunction(); audioRate('track','pbr')">
         <option value="0">w/ trb</option>
         <option value="15">w/o trb</option>
       </select>
