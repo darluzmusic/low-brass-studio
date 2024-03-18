@@ -105,7 +105,7 @@
       </select>
       <select id="demoToggle" onchange="audioRestart(); selectFunction(); audioRate('track','pbr')">
         <option value="0">w/ trb</option>
-        <option value="14">w/o trb</option>
+        <option value="15">w/o trb</option>
       </select>
       <audio id="track" preload="none"><source src=></audio>
     </div>
