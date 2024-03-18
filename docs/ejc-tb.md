@@ -81,17 +81,17 @@
         <option value="3-4-2">2. Morning Calm</option>
         <option value="5-6-3">3. So Long Birdie</option>
         <option value="7-8-4">4. Hot And Humid</option>
-        <option value="2-10-5">5. Rock On</option>
-        <option value="9-12-6">6. Important Events</option>
-        <option value="11-14-7">7. Shufflin’ In F</option>
-        <option value="13-16-8">8. Bossa At Night</option>
-        <option value="3-18-9">9. Duke’s Convoy</option>
-        <option value="15-20-10">10. Mist And Grits</option>
-        <option value="17-22-11">11. Caliente Blues</option>
-        <option value="19-24-12">12. Prince Charming</option>
-        <option value="4-26-13">13. Bird’s Backyard</option>
-        <option value="21-28-14">14. Us</option>
-        <option value="23-30-15">15. Love Is Easy</option>
+        <option value="9-10-5">5. Rock On</option>
+        <option value="11-12-6">6. Important Events</option>
+        <option value="13-14-7">7. Shufflin’ In F</option>
+        <option value="15-16-8">8. Bossa At Night</option>
+        <option value="17-18-9">9. Duke’s Convoy</option>
+        <option value="19-20-10">10. Mist And Grits</option>
+        <option value="21-22-11">11. Caliente Blues</option>
+        <option value="23-24-12">12. Prince Charming</option>
+        <option value="25-26-13">13. Bird’s Backyard</option>
+        <option value="27-28-14">14. Us</option>
+        <option value="29-30-15">15. Love Is Easy</option>
       </select>
       <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction(); audioRate('track','pbr')">⬅️</a>
       <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction(); audioRate('track','pbr')">➡️</a>
