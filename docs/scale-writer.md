@@ -24,9 +24,9 @@
 <option value="0,5,10,15,20,25,30,35,41">C♭</option>
   </select>
   <select id="chordSelect">
-    <option value="0,0,0,0,0,0,0,0,0">△, maj7, 6 | Major</option>
-    <option value="0,0,0,0,0,0,1,0,0">7 | Mixolydian</option>
-    <option value="0,0,1,0,0,0,1,0,0">-7 | Dorian</option>
+    <option value="0,0,0,0,0,0,0,0,0">△, maj7, maj9, 6 | Major</option>
+    <option value="0,0,0,0,0,0,1,0,0">7, 9, 11 | Mixolydian</option>
+    <option value="0,0,1,0,0,0,1,0,0">-7, -9, -11 | Dorian</option>
     <option value="0,0,0,-1,0,0,0,0,0">maj+4 | Lydian</option>
     <option value="0,1,1,0,1,1,1,0,1">∅7, -7♭5 | Locrian</option>
     <option value="0,0,1,0,1,1,2,1,2">°7 | Diminished</option>
@@ -47,8 +47,7 @@
 function copyAll() {
   alert("Copied!");
   const richTextDiv = document.getElementById("scale");
-
-const clipboardItem = new ClipboardItem({
+  const clipboardItem = new ClipboardItem({
 	"text/plain": new Blob(
 		[richTextDiv.innerText],
 		{ type: "text/plain" }
@@ -58,7 +57,6 @@ const clipboardItem = new ClipboardItem({
 		{ type: "text/html" }
 	),
 });
-
 navigator.clipboard.write([clipboardItem]);
 }
 function editFunction() {
@@ -72,33 +70,32 @@ function clearFunction() {
 }
 function myBarline() {
   const div = document.getElementById("scale");
-div.insertAdjacentHTML('beforeend',"–––––––––––––––––––" + "<br>");
-}
+  div.insertAdjacentHTML('beforeend',"𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖" + "<br>");
+  }
 function myBarlinedbl() {
   const div = document.getElementById("scale");
-div.insertAdjacentHTML('beforeend',"=================" + "<br>");
-}
+  div.insertAdjacentHTML('beforeend',"𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗" + "<br>");
+  }
 function myRepeatbar() {
   const div = document.getElementById("scale");
-div.insertAdjacentHTML('beforeend',"                %" + "<br>");
-}
+  div.insertAdjacentHTML('beforeend',"        𝄎        " + "<br>");
+  }
 function scaleFunction() {
-let a = rootSelect.options[rootSelect.selectedIndex].text;
-let b = chordSelect.options[chordSelect.selectedIndex].text;
-const noteArray = ["C♭","C","C♯","D","C","D♭","D","D♯","E","D","E♭","E","E♯","F♯","E♭","F♭","F","F♯","G","F","G♭","G","G♯","A","G","A♭","A","A♯","B","A","B♭","B","B♯","C♯","B♭","C♭","C","C♯","D","C♭","C","D♭","D","D♯","E","D♭","D","E♭","E","E♯","F♯","E♭","F♭","F","F♯","G","F","G♭","G","G♯","A","G♭","G","A♭","A","A♯","B","A♭","A","B♭","B","B♯","C♯","B♭","C♭","C","C♯","D"
-];
-var x = document.getElementById("rootSelect").value;
-const keyArray = x.split(",");
-var y = document.getElementById("chordSelect").value;
-const chordArray = y.split(",");
-let scale = "<b>" + a + b + "</b>"+ "<br>";
-for (let i = 0; i <= 8; i++) {
+  let a = rootSelect.options[rootSelect.selectedIndex].text;
+  let b = chordSelect.options[chordSelect.selectedIndex].text;
+  const noteArray = ["C♭","C","C♯","D","C","D♭","D","D♯","E","D","E♭","E","E♯","F♯","E♭","F♭","F","F♯","G","F","G♭","G","G♯","A","G","A♭","A","A♯","B","A","B♭","B","B♯","C♯","B♭","C♭","C","C♯","D","C♭","C","D♭","D","D♯","E","D♭","D","E♭","E","E♯","F♯","E♭","F♭","F","F♯","G","F","G♭","G","G♯","A","G♭","G","A♭","A","A♯","B","A♭","A","B♭","B","B♯","C♯","B♭","C♭","C","C♯","D"
+  ];
+  var x = document.getElementById("rootSelect").value;
+  const keyArray = x.split(",");
+  var y = document.getElementById("chordSelect").value;
+  const chordArray = y.split(",");
+  let scale = "<b>" + a + b + "</b>"+ "<br>";
+  for (let i = 0; i <= 8; i++) {
     scale += noteArray[keyArray[i]-chordArray[i]] + " ";
-}
-const div = document.getElementById("scale");
-div.insertAdjacentHTML('beforeend', scale + "<br>");
-}
+  }
+  const div = document.getElementById("scale");
+  div.insertAdjacentHTML('beforeend', scale + "<br>");
+  }
 </script>
-
 </body>
 </html>
