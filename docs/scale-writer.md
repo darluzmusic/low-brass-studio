@@ -70,11 +70,11 @@ function clearFunction() {
 }
 function myBarline() {
   const div = document.getElementById("scale");
-  div.insertAdjacentHTML('beforeend',"𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖" + "<br>");
+  div.insertAdjacentHTML('beforeend',"<b>𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖𝄖</b>" + "<br>");
   }
 function myBarlinedbl() {
   const div = document.getElementById("scale");
-  div.insertAdjacentHTML('beforeend',"𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗" + "<br>");
+  div.insertAdjacentHTML('beforeend',"<b>𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗𝄗</b>" + "<br>");
   }
 function myRepeatbar() {
   const div = document.getElementById("scale");
