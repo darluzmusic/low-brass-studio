@@ -95,7 +95,7 @@
       <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
       <a id="transport" class="navButton" onclick="audioPlay();">▶️</a>
       <a class="navButton" onclick="audioRestart();">🔃</a>
-      <select id="pbr" onchange="audioRate();">
+      <select id="pbr" onchange="audioRate('track','pbr');">
         <option value="0.5" >x0.5</option>
         <option value="0.75">x0.75</option>
         <option value="1" selected>x1</option>
