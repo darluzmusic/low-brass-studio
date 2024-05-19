@@ -76,7 +76,7 @@
 </head>
 <body onload="selectFunction()" style="background-color:white">
     <div id="exercises">
-      <select id="exerciseSelect" onchange="selectFunction()">
+      <select id="exerciseSelect" style="width: 18rem;" onchange="selectFunction(); audioRestart(); audioRate('track','pbr')">
         <option value="1-1-1">Long Tones</option>
         <option value="2-3-2">Tonguing</option>
         <option value="4-4-3">Embouchure Wake-Up Call</option>
