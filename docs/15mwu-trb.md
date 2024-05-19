@@ -90,8 +90,8 @@
         <option value="14-14-11">Upper Range</option>
         <option value="15-15-12">Warm Down</option>        
       </select>
-      <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction();">⬅️</a>
-      <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction();">➡️</a>
+      <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction(); audioRate('track','pbr')">⬅️</a>
+      <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction(); audioRate('track','pbr')">➡️</a>
       <span class="navButton" id="fs" onclick="fullScreen();">⛶</span>
       <a id="transport" class="navButton" onclick="audioPlay();">▶️</a>
       <a class="navButton" onclick="audioRestart();">🔃</a>
@@ -100,7 +100,7 @@
         <option value="0.75">x0.75</option>
         <option value="1" selected>x1</option>
       </select>
-      <select id="demoToggle" onchange="audioRestart(); selectFunction();">
+      <select id="demoToggle" onchange="audioRestart(); selectFunction(); audioRate('track','pbr')">
         <option value="0">w/ trb</option>
         <option value="12">w/o trb</option>
       </select>
