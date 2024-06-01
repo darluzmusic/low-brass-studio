@@ -77,20 +77,20 @@
 <body onload="selectFunction()" style="background-color:white">
     <div id="exercises">
       <select id="exerciseSelect" style="width: 18rem;" onchange="selectFunction(); audioRestart(); audioRate('track','pbr')">
-        <option value="1-1-1">“Après un Rêve (After A Dream), Op. 7, No. 1” by Gabriel Fauré</option>
-        <option value="2-2-2">“Valse Sentimentale” by P. I. Tschaikowsky</option>
-        <option value="3-3-3">“Canzonetta” by W. A. Mozart</option>
-        <option value="4-5-4">“Two Spanish Dances” by Leroy Ostransky</option>
-        <option value="6-6-5">“Thème de Concours” by Robert Clérisse</option>
-        <option value="7-7-6">“Sarabande and Vivace” by G. F. Handel</option>
-        <option value="8-9-7">“Love Thoughts” by Arthur Pryor</option>
-        <option value="10-11-8">“Morceau de Concours” by Edmond Missa</option>
-        <option value="12-13-9">“Crépuscule” by Gabriel Parès</option>
-        <option value="14-15-10">“Concerto Miniature” by Leroy Ostransky</option>
-        <option value="16-17-11">“Prelude and Fanfaronade” by Paul Koepke</option>
-        <option value="18-19-12">“Solo de Concert” by Th. Dubois</option>
-        <option value="20-21-13">“Concerto in F Minor” by Émile Lauga</option>
-        <option value="22-22-14">“Allegro Vivace from Concerto” by N. Rimsky-Korsakoff</option>
+        <option value="1-1-1">1. “Après un Rêve (After A Dream), Op. 7, No. 1” by Gabriel Fauré</option>
+        <option value="2-2-2">2. “Valse Sentimentale” by P. I. Tschaikowsky</option>
+        <option value="3-3-3">3. “Canzonetta” by W. A. Mozart</option>
+        <option value="4-5-4">4. “Two Spanish Dances” by Leroy Ostransky</option>
+        <option value="6-6-5">5. “Thème de Concours” by Robert Clérisse</option>
+        <option value="7-7-6">6. “Sarabande and Vivace” by G. F. Handel</option>
+        <option value="8-9-7">7. “Love Thoughts” by Arthur Pryor</option>
+        <option value="10-11-8">8. “Morceau de Concours” by Edmond Missa</option>
+        <option value="12-13-9">9. “Crépuscule” by Gabriel Parès</option>
+        <option value="14-15-10">10. “Concerto Miniature” by Leroy Ostransky</option>
+        <option value="16-17-11">11. “Prelude and Fanfaronade” by Paul Koepke</option>
+        <option value="18-19-12">12. “Solo de Concert” by Th. Dubois</option>
+        <option value="20-21-13">13. “Concerto in F Minor” by Émile Lauga</option>
+        <option value="22-22-14">14. “Allegro Vivace from Concerto” by N. Rimsky-Korsakoff</option>
       </select>
       <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction(); audioRate('track','pbr')">⬅️</a>
       <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction(); audioRate('track','pbr')">➡️</a>
