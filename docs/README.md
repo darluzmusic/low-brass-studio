@@ -1,49 +1,51 @@
-[15mwu-trb] (https://darluzmusic.github.io/low-brass-studio/15mwu-trb)
-[15mwu-tuba] (https://darluzmusic.github.io/low-brass-studio/15mwu-tuba)
-[20mwu-tuba] (https://darluzmusic.github.io/low-brass-studio/20mwu-tuba)
-[autumn-leaves] (https://darluzmusic.github.io/low-brass-studio/autumn-leaves)
-[b1ebass] (https://darluzmusic.github.io/low-brass-studio/b1ebass)
-[baritone-fingerings] (https://darluzmusic.github.io/low-brass-studio/baritone-fingerings)
-[bordogni-tuba] (https://darluzmusic.github.io/low-brass-studio/bordogni-tuba)
-[ccc-barbc] (https://darluzmusic.github.io/low-brass-studio/ccc-barbc)
-[ccc-tb] (https://darluzmusic.github.io/low-brass-studio/ccc-tb)
-[chromatic-scale] (https://darluzmusic.github.io/low-brass-studio/chromatic-scale)
-[classical-solos-for-trombone] (https://darluzmusic.github.io/low-brass-studio/classical-solos-for-trombone)
-[classical-solos-for-tuba] (https://darluzmusic.github.io/low-brass-studio/classical-solos-for-tuba)
-[david-concertino] (https://darluzmusic.github.io/low-brass-studio/david-concertino)
-[days-of-wine-and-roses] (https://darluzmusic.github.io/low-brass-studio/days-of-wine-and-roses)
-[e1bb] (https://darluzmusic.github.io/low-brass-studio/e1bb)
-[e1bt] (https://darluzmusic.github.io/low-brass-studio/e1bt)
-[e1eb] (https://darluzmusic.github.io/low-brass-studio/e1eb)
-[e1tb] (https://darluzmusic.github.io/low-brass-studio/e1tb)
-[e1tp] (https://darluzmusic.github.io/low-brass-studio/e1tp)
-[e1tu] (https://darluzmusic.github.io/low-brass-studio/e1tu)
-[e2bb] (https://darluzmusic.github.io/low-brass-studio/e2bb)
-[e2bt] (https://darluzmusic.github.io/low-brass-studio/e2bt)
-[e2tb] (https://darluzmusic.github.io/low-brass-studio/e2tb)
-[e2tu] (https://darluzmusic.github.io/low-brass-studio/e2tu)
-[e3bb] (https://darluzmusic.github.io/low-brass-studio/e3bb)
-[e3tb] (https://darluzmusic.github.io/low-brass-studio/e3tb)
-[e3tu] (https://darluzmusic.github.io/low-brass-studio/e3tu)
-[ejc-tb] (https://darluzmusic.github.io/low-brass-studio/ejc-tb)
-[ejd] (https://darluzmusic.github.io/low-brass-studio/ejd)
-[ejt] (https://darluzmusic.github.io/low-brass-studio/ejt)
-[footprints] (https://darluzmusic.github.io/low-brass-studio/footprints)
-[fundamentals] (https://darluzmusic.github.io/low-brass-studio/fundamentals)
-[jazz-standards] (https://darluzmusic.github.io/low-brass-studio/jazz-standards)
-[just-friends] (https://darluzmusic.github.io/low-brass-studio/just-friends)
-[jz1tb] (https://darluzmusic.github.io/low-brass-studio/jz1tb)
-[jz2tb] (https://darluzmusic.github.io/low-brass-studio/jz2tb)
-[misty] (https://darluzmusic.github.io/low-brass-studio/misty)
-[rb-6e-v1-b-flat] (https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-b-flat)
-[rb-6e-v1-bass-clef] (https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-bass-clef)
-[rb-6e-v1-e-flat] (https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-e-flat)
-[rb-6e-v1-treble-clef] (https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-treble-clef)
-[rt-tb] (https://darluzmusic.github.io/low-brass-studio/rt-tb)
-[satin-doll-playlist] (https://darluzmusic.github.io/low-brass-studio/satin-doll-playlist)
-[satin-doll] (https://darluzmusic.github.io/low-brass-studio/satin-doll)
-[scale-writer] (https://darluzmusic.github.io/low-brass-studio/scale-writer)
-[sesame-street] (https://darluzmusic.github.io/low-brass-studio/sesame-street)
-[slide-positions] (https://darluzmusic.github.io/low-brass-studio/slide-positions)
-[slide-workout] (https://darluzmusic.github.io/low-brass-studio/slide-workout)
-[so-what] (https://darluzmusic.github.io/low-brass-studio/so-what)
+# Links
+- <a href="https://darluzmusic.github.io/low-brass-studio/15mwu-trb">15mwu-trb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/15mwu-tuba">15mwu-tuba</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/20mwu-tuba">20mwu-tuba</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/autumn-leaves">autumn-leaves</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/b1ebass">b1ebass</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/baritone-fingerings">baritone-fingerings</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/bordogni-tuba">bordogni-tuba</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/ccc-barbc">ccc-barbc</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/ccc-tb">ccc-tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/chromatic-scale">chromatic-scale</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/classical-solos-for-trombone">classical-solos-for-trombone</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/classical-solos-for-tuba">classical-solos-for-tuba</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/david-concertino">david-concertino</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/days-of-wine-and-roses">days-of-wine-and-roses</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e1bb">e1bb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e1bt">e1bt</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e1eb">e1eb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e1tb">e1tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e1tp">e1tp</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e1tu">e1tu</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e2bb">e2bb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e2bt">e2bt</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e2tb">e2tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e2tu">e2tu</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e3bb">e3bb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e3tb">e3tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/e3tu">e3tu</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/ejc-tb">ejc-tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/ejd">ejd</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/ejt">ejt</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/footprints">footprints</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/fundamentals">fundamentals</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/jazz-standards">jazz-standards</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/just-friends">just-friends</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/jz1tb">jz1tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/jz2tb">jz2tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/misty">misty</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-b-flat">rb-6e-v1-b-flat</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-bass-clef">rb-6e-v1-bass-clef</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-e-flat">rb-6e-v1-e-flat</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/rb-6e-v1-treble-clef">rb-6e-v1-treble-clef</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/rt-tb">rt-tb</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/satin-doll-playlist">satin-doll-playlist</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/satin-doll">satin-doll</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/scale-writer">scale-writer</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/sesame-street">sesame-street</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/slide-positions">slide-positions</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/slide-workout">slide-workout</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/so-what">so-what</a>
+
