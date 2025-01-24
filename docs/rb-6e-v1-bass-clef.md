@@ -556,7 +556,7 @@
       } else {
         zero = "";
       }
-        var rate = "<select id=pbr" + j + " onchange=audioRate(" + j + ",'pbr" + j + "')><option value='0.5' >x0.5</option><option value='0.625' >x0.63</option><option value='0.75'>x0.75</option><option value='0.875'>x0.88</option><option value='1' selected>x1</option></select>";
+        var rate = "<select id=pbr" + j + " onchange=audioRate(" + j + ",'pbr" + j + "')><option value='0.5' >x0.5</option><option value='0.625' >x0.63</option><option value='0.75'>x0.75</option><option value='0.8125'>x0.81</option><option value='0.875'>x0.88</option><option value='0.9375'>x0.94</option><option value='1' selected>x1</option></select>";
         var aud = "<audio id=" + j + " preload='none'><source src=" +  dir + zero + j + ".mp3></audio><span class=navButton onclick=audioRestart(" + j + ")>🔃</span>";
         var play = "<span class=navButton id=transport" + j + " onclick=audioPlay(" + j + ")>▶️</span>"
         text_1 += "<div id=transport><div id=audioControl>" + play + aud + rate + "</div><div id=nav>" + "</div></div>";
