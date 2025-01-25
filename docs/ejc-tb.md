@@ -103,6 +103,7 @@
         <option value="0.625">x0.63</option>
         <option value="0.75">x0.75</option>
         <option value="0.875">x0.88</option>
+        <option value="0.9375">x0.94</option>
         <option value="1" selected>x1</option>
       </select>
       <select id="demoToggle" onchange="audioRestart(); selectFunction(); audioRate('track','pbr')">
