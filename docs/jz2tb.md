@@ -224,7 +224,7 @@
         var img = "<img id=exercise" + i + " src=" + img_dir + i + ".jpg>";
         var play = "<span class=navButton id=transport" + i + " onclick=audioPlay(" + i + ")>▶️</span>"
         var aud = "<audio id=" + i + " preload='none'><source src=" +  aud_dir + i + ".mp3></audio><span class=navButton onclick=audioRestart(" + i + ")>🔃</span>";
-        var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='1' selected>x1</option></select>";
+        var rate = "<select id=pbr" + i + " onchange=audioRate(" + i + ",'pbr" + i + "')><option value='0.5' >x0.5</option><option value='0.75'>x0.75</option><option value='0.875' selected>x0.88</option><option value='1' selected>x1</option></select>";
         var top = "<a class=navButton onclick=audioRestart(" + i + ") href=#top>🔝</a>";
         var exP = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - 1) + ">⬅️</a>";
         var exN = "<a class=navButton onclick=audioRestart(" + i + ") href=#line" + (i - -1) + ">➡️</a>";
