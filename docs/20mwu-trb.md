@@ -180,7 +180,7 @@
     }
     //LOOP//
       const dir = "https://low-brass-assets.s3.us-west-1.amazonaws.com/";
-      const fol = "20mwu-trombone/";
+      const fol = "20mwu-trb/";
       const path = `${dir}${fol}`;
       function selectFunction() {
        let text1 = "";
