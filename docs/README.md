@@ -11,6 +11,7 @@
 - <a href="https://darluzmusic.github.io/low-brass-studio/ccc-tb">ccc-tb</a>
 - <a href="https://darluzmusic.github.io/low-brass-studio/chromatic-scale">chromatic-scale</a>
 - <a href="https://darluzmusic.github.io/low-brass-studio/classical-solos-for-trombone">classical-solos-for-trombone</a>
+- <a href="https://darluzmusic.github.io/low-brass-studio/classical-solos-for-trombone-vol-2">classical-solos-for-trombone-vol-2</a>
 - <a href="https://darluzmusic.github.io/low-brass-studio/classical-solos-for-tuba">classical-solos-for-tuba</a>
 - <a href="https://darluzmusic.github.io/low-brass-studio/david-concertino">david-concertino</a>
 - <a href="https://darluzmusic.github.io/low-brass-studio/days-of-wine-and-roses">days-of-wine-and-roses</a>
