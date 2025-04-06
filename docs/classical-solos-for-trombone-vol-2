@@ -77,21 +77,21 @@
 <body onload="selectFunction()" style="background-color:white">
     <div id="exercises">
       <select id="exerciseSelect" onchange="selectFunction(); audioRestart(); audioRate('track','pbr')">
-        <option value="1-1-1">1. Waltz</option>
-        <option value="2-2-2">2. Choral</option>
-        <option value="3-3-3">3. Humming Song</option>
-        <option value="4-4-4">4. Gynmonpedie No. 1</option>
-        <option value="5-5-5">5. I'm Called Little Buttercup</option>
-        <option value="6-6-6">6. Study</option>
-        <option value="7-7-7">7. Minuet</option>
-        <option value="8-8-8">8. Theme and Variation</option>
-        <option value="9-9-9">9. Northern Song</option>
-        <option value="10-10-10">10. Two German Dances</option>
-        <option value="11-11-11">11. Watchman's Song</option>
-        <option value="12-12-12">12. Gavotte</option>
-        <option value="13-13-13">13. Vien qua, Dorina bella</option>
-        <option value="14-14-14">14. Minuet</option>
-        <option value="15-15-15">15. The Prince of Denmark's March</option>
+        <option value="1-1-1">Largo (from Xerxes) (Handel)</option>
+        <option value="2-2-2">Songs My Mother Taught Me (Dvorák)</option>
+        <option value="3-3-3">Minuet No. 2 (Pezold)</option>
+        <option value="4-4-4">La Cinquantine (Gabriel-Marie)</option>
+        <option value="5-5-5">See, The Conquering Hero Comes (Handel)</option>
+        <option value="6-6-6">Sonatina Op. 36, No. 1 (Clementi)</option>
+        <option value="7-7-7">Serenata (Haydn)</option>
+        <option value="8-8-8">Tambourin (Rameau)</option>
+        <option value="9-9-9">Waltz (Tchaikovsky)</option>
+        <option value="10-10-10">Sonatina (Von Weber)</option>
+        <option value="11-11-11">Gavotte (Gluck-Brahms)</option>
+        <option value="12-12-12">Sonata Op. 118, No. 1 (Schumann)</option>
+        <option value="13-13-13">Serenade (Schubert)</option>
+        <option value="14-14-14">Sonatina Anh. 5, No. 1 (Beethoven)</option>
+        <option value="15-15-15">Bourrée (Handel)</option>        
       </select>
       <a class="navButton" onclick="audioRestart(); pagePrevious(); selectFunction(); audioRate('track','pbr')">⬅️</a>
       <a class="navButton" onclick="audioRestart(); pageNext(); selectFunction(); audioRate('track','pbr')">➡️</a>
@@ -181,7 +181,7 @@
     }
     //LOOP//
       const dir = "https://low-brass-assets.s3.us-west-1.amazonaws.com/";
-      const fol = "classical-solos-for-trombone/";
+      const fol = "classical-solos-for-trombone-vol-2/";
       const path = `${dir}${fol}`;
       function selectFunction() {
        let text1 = "";
