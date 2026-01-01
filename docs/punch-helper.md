@@ -3,8 +3,8 @@
 
 <p>Punch Helper</p>
 
-<input type="text" value="Juana Briones Elementary" id="myInput">
-<button onclick="myFunction()">Copy text</button>
+<input type="text" value="Juana Briones Elementary" id="1">
+<button onclick="myFunction('1')">Copy text</button>
 <input type="text" value="10:25am" id="myInput">
 <button onclick="myFunction()">Copy text</button>
 <input type="text" value="11:50am" id="myInput">
